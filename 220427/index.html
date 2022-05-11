@@ -23,13 +23,28 @@
       position: relative;
       opacity: 0.5;
     }
-    .fadeIn{
-      animation-name: fadeInAnime;
+    .fadeInPhoto{
+      animation-name: fadeInAnimePhoto;
       animation-duration: 4s;
       animation-fill-mode: forwards;
       opacity: 0;
     }
-    @keyframes fadeInAnime {
+    @keyframes fadeInAnimePhoto {
+      from{
+        opacity: 10%;
+      }
+      to{
+        opacity:50%;
+      }
+    }
+
+    .fadeInTitle{
+      animation-name: fadeInAnimeTitle;
+      animation-duration: 4s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+    }
+    @keyframes fadeInAnimeTitle {
       from{
         opacity: 10%;
       }
@@ -85,9 +100,9 @@
 <body>
   <div class="group">
     <div>
-      <img src = "img/IMG_4206.jpg" width="100%" Class="keibaPhoto">
+      <img src = "img/IMG_4206.jpg" width="100%" Class="keibaPhoto fadeInPhoto">
     </div>
-    <div  class="titleText fadeIn">
+    <div  class="titleText fadeInTitle">
       <h1 class="center noBreak" style="font-size: 10vmin">Akito Nagashima</h1>
       <p  class="center noBreak" style="font-size:  5vmin">Mini Site</p>
     </div>
