@@ -85,7 +85,7 @@
     animation-delay: 0.8s;
   }
 
-  /*この部分はbootstrapで実装したいけどroundedクラスがなんかうまく作用しない*/
+  /*この部分はbootstrapで実装したいけどroundedがなんかうまく作用しない*/
   .borderRadius {
     border-radius: 10%;
   }
@@ -93,10 +93,14 @@
 
 
 <body>
-<div class="container" style="position: relative">
+<header>
   <div>
     <h1 class="my-5 font-weight-bold text-center">Photos</h1>
   </div>
+</header>
+<br>
+<div class="container" style="position: relative">
+
   <ul class="block-grid block-grid-number">
     <li>
       <img src="img/Photo0.jpeg" class="borderRadius col fadeUp delay0" alt="競馬">
@@ -117,7 +121,7 @@
 
   <div>
     <h2 class="my-5 font-weight-bold text-center">
-      ためにならない備忘録
+      しくじり備忘録
     </h2>
     <p class="text-center" style="font-size: 1rem;">
       昨日の夕飯なに食べたのかも忘れる記憶力の持ち主なのでどう作ったか書いておきます。<s>どう作ったか書けばコンテンツ量が2倍になって一石二鳥とか決して思ってない</s>
