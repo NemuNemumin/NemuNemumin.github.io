@@ -6,46 +6,44 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" rel="stylesheet">
   <link href="myStylesheet.css" rel="stylesheet">
   <meta charset="UTF-8">
-  <title>youtubeのレイアウト(フルスクリーン)</title>
+  <title>はてなブックマークのレイアウト(フルスクリーン)</title>
 </head>
 
 <body>
+<div class="box bg-dark"></div>
 
-<div class="row" style="height: 50px;">
-  <div class="col-3 border">ロゴ</div>
-  <div class="col-6 border">
-    <div style="position: absolute;top: 50%;left: 50%;transform: translateY(-50%) translateX(-50%);">
-      <div class="text-right border">
-        <i class="bi bi-search"></i>
-      </div>
+<div class="container">
+  <div class="row">
+    <div class="col-1">
+      <i class="bi bi-bootstrap-fill my-auto" style="font-size: 3rem; color: #b3d7ff;"></i>
+    </div>
+    <div class="col-7 my-auto">
+      <p>ブックマークかも</p>
+    </div>
+    <div class="col-2 my-auto">
+      <p class="box bg-glay my-auto" ></p>
+    </div>
+    <div class="col-2">
+
     </div>
   </div>
-  <div class="col-3 border">アイコンたち</div>
-</div>
-
-<div class="container-fluid">
 
   <div class="row">
-    <div class="col-7 border" style="height: 100%;">
-      <img alt="動画ダミー" src="img/720x360.png">
-      <h2>動画のタイトル</h2>
+    <div class="col-3 border text-center">
+      <img src="img/180x120.png" alt="newsThumbnail">
     </div>
-    <div class="col-5 border" style="height: 100%;">
-      <!--ここにサムネイル列の内容を記述-->
-      <div class="row">
-        <div class="col-3">
-          <img alt="サムネイル" class="my-2" src="img/120x70.png">
-        </div>
-        <div class="col-9">
-          <p>動画タイトル</p>
-        </div>
-        <img alt="サムネイル" class="my-2" src="img/120x70.png">
-      </div>
+    <div class="col-3 border text-center">
+      <img src="img/180x120.png" alt="newsThumbnail">
     </div>
-  </div> <!--100%にするとなかのコンテンツ量に依存して高さがフィットするようになる -->
-</div>
+    <div class="col-3 border text-center">
+      <img src="img/180x120.png" alt="newsThumbnail">
+    </div>
+    <div class="col-3 border text-center">
+      <img src="img/180x120.png" alt="newsThumbnail">
+    </div>
 
 
+  </div>
 </div>
 <script crossorigin="anonymous"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
