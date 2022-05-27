@@ -8,3 +8,15 @@
   position: relative;
   width: 100%;
 }
+
+.box{
+  width: 120px;
+  height: 180px;
+  background: #0f6674;
+}
+.bg{
+  position: relative;
+  width:auto;
+  height: auto;
+  background: #218838;
+}
