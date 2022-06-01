@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 .box{
   width :  auto;
   height:  30px;
