@@ -1,7 +1,7 @@
 html{
-  font-size: 62.5%;
+  font-size: 62.5%;/*内容:htmlのfont-sizeを16px->10pxに変更。理由:rem単位での指定をやりやすくするため。*/
+  scroll-behavior: smooth;
 }
-/*内容:htmlのfont-sizeを16px->10pxに変更。理由:rem単位での指定をやりやすくするため。*/
 
 h1{
   font-size: 4rem;
