@@ -19,23 +19,41 @@
 </head>
 
 <body>
-<!--header.htmlを表示-->
+<!--headerを表示-->
 <header>
   <script src="js/header.js"></script>
 </header>
-<!--/header.htmlを表示-->
+<!--/headerを表示-->
 
-<p>コンテンツ</p>
+<!--コンテナ-->
+<div class="container">
+  <!--大枠-->
+  <div class="row">
+    <!--メイン-->
+    <div class="col-9">
+      <p>コンテンツ</p>
+    </div>
+    <!--/メイン-->
 
+    <!--サイドバー-->
+    <div class="col-3">
+      <!--sidebarを表示-->
+      <header>
+        <script src="js/sidebar.js"></script>
+      </header>
+      <!--/sidebarを表示-->
+    </div>
+    <!--/サイドバー-->
+  </div>
+  <!--/大枠-->
+</div>
+<!--コンテナ-->
 
-
-
-
-<!--footer.htmlを表示-->
+<!--footerを表示-->
 <footer>
   <script src="js/footer.js"></script>
 </footer>
-<!--footer.htmlを表示-->
+<!--footerを表示-->
 
 
 <script crossorigin="anonymous"
