@@ -4,3 +4,6 @@
 .min-height-70{
   min-height: 70vh;
 }
+.img-circle{
+  border-radius: 2em;
+}
