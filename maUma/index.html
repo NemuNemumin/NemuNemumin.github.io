@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-
+  <!--jQuery-->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <!--ビューポート指定-->
   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
   <!--bootstrapアイコン読込-->
@@ -31,10 +32,16 @@
     <div class="d-block d-md-none text-center"><!--sm版-->
       <div class="boxBorder rounded"><!--パーツ-->
         <div class="f-container"><!--イメージ画像(正方形、左寄り)-->
-          <img alt="" class="f-item rounded" height="200" src="sampleImg/photo.png" width="200">
+          <img alt="" class="f-item rounded" height="200" src="sampleImg/photo.png" width="200" id="shopThumbnailPhoto">
           <div class="f-item-title mt-4">
-            <p>店のなまえ</p>
-            <p>代表的なメニュー</p>
+            <p id="shopThumbNailName"></p>
+            <p id="shopThumbnailMenu"></p>
+            <script>
+                $("#shopThumbNailName").text("変更後の文章1");
+            </script>
+            <script>
+                $("#shopThumbnailMenu").text("変更後の文章2");
+            </script>
           </div>
         </div>
 
@@ -42,6 +49,7 @@
     </div>
   </main>
 </div>
+
 <footer></footer>
 
 

@@ -1,3 +1,1 @@
-import * as https from "https";
-
-$.get(https://nemunemumin.github.io/maUma/menu.html)
+$(p).text("変更後の文章");
