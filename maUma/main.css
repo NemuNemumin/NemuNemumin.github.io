@@ -1,0 +1,12 @@
+.boxBorder{
+  border: solid 2px #000;
+}
+.f-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.f-item-title{
+  text-align: left;
+
+}
