@@ -1,5 +1,5 @@
 .boxBorder{
-  border: solid 2px #000;
+  border: 1px solid #adb5bd;
 }
 .f-container{
   display: flex;
