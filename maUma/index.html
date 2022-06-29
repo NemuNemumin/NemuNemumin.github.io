@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700;900&display=swap" rel="stylesheet">
   <!--jQuery-->
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <!--ビューポート指定-->
@@ -13,7 +16,7 @@
   <!--スタイルシートmain.css読込-->
   <link href="main.css" rel="stylesheet">
   <!--スクリプト読込-->
-    <link href="shopData.js" rel="script">
+  <link href="shopData.js" rel="script">
   <!--googleフォント読込-->
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <meta charset="UTF-8">
@@ -31,13 +34,16 @@
   <main>
     <div class="d-block d-md-none text-center"><!--sm版-->
       <div class="rounded bg-white"><!--パーツ-->
-        <div class="f-container"><!--イメージ画像(正方形、左寄り)-->
-          <img class="shopImg" alt="" class="f-item rounded" src="img/shopImg/koichiro.jpg" id="shopThumbnailPhoto">
-          <div class="f-item-title mt-4">
-            <p id="shopThumbNailName">耕一路</p>
-            <p id="shopThumbnailMenu">モカソフトクリーム</p>
-            <p id="shopPlace">2F・柱番号33付近</p>
-            <p id="shopPrice">約330円</p>
+        <div class="row"><!--イメージ画像(正方形、左寄り)-->
+          <div class="col-4">
+            <img alt="" class="shopImg rounded" id="shopThumbnailPhoto" src="img/shopImg/koichiro.jpg">
+          </div>
+          <div>
+            <p class="shopName" id="shopThumbNailName">耕一路</p>
+            <p class="shopSummary" id="shopThumbnailMenu">モカソフトクリーム</p>
+            <p class="shopSummary text-right" id="shopPlace">2F・柱番号33付近</p>
+
+
             <!--jQueryでデータベース的なことしたい
             <script>
                 $("#shopThumbNailName").text("変更後の文章1");
