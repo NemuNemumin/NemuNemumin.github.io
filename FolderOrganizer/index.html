@@ -11,50 +11,45 @@
   <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" rel="stylesheet">
   <!--スタイルシートmain.css読込-->
-  <link href="main.css" rel="stylesheet">
-  <!--スクリプト読込-->
-    <link href="shopData.js" rel="script">
+  <link href="style.css" rel="stylesheet">
+
   <!--googleフォント読込-->
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <meta charset="UTF-8">
-  <title>maUma</title>
+  <title>写真アップロード</title>
 </head>
 <body>
-
 <header>
-  <div class="d-block d-md-none text-center my-1">
-    <p>東京競馬場 - 競馬開催日</p>
-  </div>
+  <h1 class="text-center">Creation</h1>
 </header>
-<hr>
+
 <div class="container">
-  <main>
-    <div class="d-block d-md-none text-center"><!--sm版-->
-      <div class="rounded bg-white"><!--パーツ-->
-        <div class="f-container"><!--イメージ画像(正方形、左寄り)-->
-          <img class="shopImg" alt="" class="f-item rounded" src="img/shopImg/koichiro.jpg" id="shopThumbnailPhoto">
-          <div class="f-item-title mt-4">
-            <p id="shopThumbNailName">耕一路</p>
-            <p id="shopThumbnailMenu">モカソフトクリーム</p>
-            <p id="shopPlace">2F・柱番号33付近</p>
-            <p id="shopPrice">約330円</p>
-            <!--jQueryでデータベース的なことしたい
-            <script>
-                $("#shopThumbNailName").text("変更後の文章1");
-            </script>
-            <script>
-                $("#shopThumbnailMenu").text("変更後の文章2");
-            </script>
-            -->
-          </div>
+  <div class="bg-f7 rounded">
+    <h2>今月のテーマ</h2>
+    <p>こんな絵を書いてください</p>
+  </div>
+
+  <div class="row">
+    <div class="col-6 col-md-4">
+      <div class="row">
+        <div class="col-4">
+          <img class="myIcon" src="img/150x150.png" width="100%">
+        </div>
+        <div class="col-8 text-left my-auto">
+          <p>あああ</p>
         </div>
 
       </div>
-    </div>
-  </main>
-</div>
 
-<footer></footer>
+
+    </div>
+
+
+  </div>
+
+
+
+</div>
 
 
 <script crossorigin="anonymous"
@@ -66,5 +61,6 @@
 <script crossorigin="anonymous"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
 </body>
 </html>

@@ -1,3 +1,7 @@
+body{
+  background-color: #f7f7f7;
+}
+
 .boxBorder{
   border: 1px solid #adb5bd;
 }
@@ -8,5 +12,9 @@
 }
 .f-item-title{
   text-align: left;
+}
 
+.shopImg{
+  width: 25%;
+  height: 25%;
 }
