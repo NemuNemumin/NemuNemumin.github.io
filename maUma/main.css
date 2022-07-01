@@ -22,13 +22,3 @@ body {
   margin: 0 auto;
 }
 
-.shopTextBox {
-  width: 75%;
-  display: block;
-  justify-content: flex-start;
-}
-
-.shopText {
-  display: block;
-  width: 70%;
-}
