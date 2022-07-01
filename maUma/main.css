@@ -15,7 +15,7 @@ body {
   margin: 0 auto;
 }
 
-.roundedShopImg{
+.roundedShopImg {
   border-radius: 15px;
 }
 
@@ -31,10 +31,22 @@ body {
   right: 0;
 }
 
-.shopImgBox{
+.shopImgBox {
   width: 25%;
 }
 
-.shopImgBox > img{
+.shopImgBox > img {
   border-radius: 15px;
+}
+
+p {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.fs-l {
+  font-size: 2.5rem;
+}
+
+.fs-m{
+  font-size: 1.5rem;
 }
