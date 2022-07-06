@@ -7,7 +7,11 @@ $.getJSON("menu.json")
 
 
         $.each(json, function(index, object){
+            body += `<div class="flexStart bg-white roundedShopImg" id="shops">`
             body += `<p id="name" class="text-left fs-l">${object.name}</p>`
+            body += `<p id="menu" class = "text-left fs-m" >${object.menu}</p>`
+
+            body += "</div>"
             // $("#name").replaceWith(`<p id="name" class="text-left fs-l">${object.name}</p>`)
         })
 
