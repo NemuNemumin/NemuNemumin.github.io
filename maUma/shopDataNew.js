@@ -13,7 +13,7 @@ $.getJSON("menu.json")
 
 
         //body += `</ul>`;
-        $("#shops").append(body);
+        $("#tags").append(body);
         // alert(json);
 
     });
