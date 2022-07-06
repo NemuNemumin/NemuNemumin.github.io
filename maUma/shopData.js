@@ -1,1 +1,6 @@
-$(p).text("変更後の文章");
+var data
+$.getJSON("menu.json")
+    .done(function (json) {
+        alert(data.name);
+
+    });
