@@ -1,5 +1,5 @@
 $.getJSON("menu1.json")
-    //店情報の表示
+    //店情報の表示始め
     .done(function (json) {
         console.log(json);
         let body = ""
@@ -16,5 +16,6 @@ $.getJSON("menu1.json")
             body += `</div>`
             body += `</div>`
         })
-        $("#tags").append(body);
+        $("#tags").append(body);//bodyをid=tagsの部分に追加
     });
+    //店情報の表示終わり
