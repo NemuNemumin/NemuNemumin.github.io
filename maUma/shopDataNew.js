@@ -1,7 +1,6 @@
 $.getJSON("menu1.json")
     //店情報の表示始め
     .done(function (json) {
-        console.log(json);
         let body = ""
         $.each(json, function (index, object) {
             body += `<div class = "flexStart bg-white roundedShopImg my-3" id="shops">`
