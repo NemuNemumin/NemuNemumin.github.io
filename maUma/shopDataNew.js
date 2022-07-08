@@ -3,6 +3,7 @@ $.getJSON("menu1.json")
     .done(function (json) {
         let body =""
         $.each(json, function (index, object) {
+            body += `<div class = "col-lg-6">`
             body += `<div class = "flexStart bg-white roundedShopImg my-3" id="shops">`
             body += `<div class="shopImgBox">
                         <img alt="shop" class="shopImg" src="/maUma/sampleImg/${object.img}">
@@ -11,6 +12,7 @@ $.getJSON("menu1.json")
             body += `<p id="name"  class = "text-left fs-l">${object.name}</p>`
             body += `<p id="menu"  class = "text-left fs-m">${object.menu}</p>`
             body += `<p id="place" class = "shopText  fs-m">${object.place}</p>`
+            body += `</div>`
             body += `</div>`
             body += `</div>`
         })
