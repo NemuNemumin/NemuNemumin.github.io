@@ -11,8 +11,6 @@ $.getJSON("tokyoShop.json")
             body += `<div class = "mx-2 mt-n1 position-relative w-75">`
             body += `<p id="name"  class = "fs-l">${object.name}</p>`
             body += `<p id="menu"  class = "fs-m">${object.menu}</p>`
-
-
             body += `<p id="place" class = "text-right shopText  fs-m">${object.place}</p>`
             body += `</div>`
             body += `</div>`
