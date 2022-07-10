@@ -23,6 +23,7 @@ body {
   width: 100%;
   display: block;
   margin: 0 auto;
+  border-radius: 15px;
 }
 
 .shopText {
@@ -30,15 +31,6 @@ body {
   bottom: 0;
   right: 0;
 }
-
-.shopImgBox {
-  width: 25%;
-}
-
-.shopImgBox > img {
-  border-radius: 15px;
-}
-
 
 .fs-l {
   font-family: 'Noto Sans JP', sans-serif;
