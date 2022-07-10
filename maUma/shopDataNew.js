@@ -5,10 +5,10 @@ $.getJSON("tokyoShop.json")
         $.each(json, function (index, object) {
             body += `<div class = "col-lg-6">`
             body += `<div class = "flexStart bg-white roundedShopImg my-3" id="shops">`
-            body += `<div class="w-25">
+            body += `<div class="width-img">
                         <img alt="shop" class="shopImg " src="/maUma/img/shopImg/${object.img}">
                      </div>`
-            body += `<div class = "mx-2 mt-n1 position-relative w-75">`
+            body += `<div class = "mx-2 mt-n1 position-relative width-text">`
             body += `<p id="name"  class = "fs-l">${object.name}</p>`
             body += `<p id="menu"  class = "fs-m">${object.menu}</p>`
             body += `<p id="place" class = "text-right shopText  fs-m">${object.place}</p>`
