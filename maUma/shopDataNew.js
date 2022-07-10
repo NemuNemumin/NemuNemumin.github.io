@@ -8,10 +8,10 @@ $.getJSON("menu1.json")
             body += `<div class="shopImgBox">
                         <img alt="shop" class="shopImg" src="/maUma/sampleImg/${object.img}">
                      </div>`
-            body += `<div class = "mx-2 mt-n1 position-relative" >`
-            body += `<p id="name"  class = "text-left fs-l">${object.name}</p>`
-            body += `<p id="menu"  class = "text-left fs-m">${object.menu}</p>`
-            body += `<p id="place" class = "shopText  fs-m">${object.place}</p>`
+            body += `<div class = "mx-2 mt-n1 position-relative text-center" >`
+            body += `<p id="name"  class = "text-center fs-l">${object.name}</p>`
+            body += `<p id="menu"  class = "text-center fs-m">${object.menu}</p>`
+            body += `<p id="place" class = "text-center shopText  fs-m">${object.place}</p>`
             body += `</div>`
             body += `</div>`
             body += `</div>`
