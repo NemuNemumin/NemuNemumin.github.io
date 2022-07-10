@@ -1,4 +1,4 @@
-$.getJSON("menu1.json")
+$.getJSON("tokyoShop.json")
     //店情報の表示始め
     .done(function (json) {
         let body =""
@@ -6,13 +6,13 @@ $.getJSON("menu1.json")
             body += `<div class = "col-lg-6">`
             body += `<div class = "flexStart bg-white roundedShopImg my-3" id="shops">`
             body += `<div class="w-25">
-                        <img alt="shop" class="shopImg " src="/maUma/sampleImg/${object.img}">
+                        <img alt="shop" class="shopImg " src="/maUma/img/shopImg/${object.img}">
                      </div>`
-            body += `<div class = "mx-2 mt-n1 position-relative w-50">`
+            body += `<div class = "mx-2 mt-n1 position-relative w-75">`
             body += `<p id="name"  class = "fs-l">${object.name}</p>`
             body += `<p id="menu"  class = "fs-m">${object.menu}</p>`
-            body += `</div>`
-            body += `<div class = "mx-2 mt-n1 position-relative w-25">`
+
+
             body += `<p id="place" class = "text-right shopText  fs-m">${object.place}</p>`
             body += `</div>`
             body += `</div>`
