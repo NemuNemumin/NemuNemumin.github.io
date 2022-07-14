@@ -1,5 +1,7 @@
 $(document).on("click", "#tokyo", function (){//開催日ボタンが押されたときに走る
-    console.log(".container clicked");
+    let body = ""
+    body += `<p>開催日に置き換えたよん　いぇーい</p>`
+    $("tags").append(body);
 });
 $(document).on("click", ".container", function (){
     console.log(".container clicked");
