@@ -1,4 +1,4 @@
-$(document).on("click", "#tokyo", function (){
+$(document).on("click", "#tokyo", function (){//開催日ボタンが押されたときに走る
     console.log(".container clicked");
 });
 $(document).on("click", ".container", function (){
