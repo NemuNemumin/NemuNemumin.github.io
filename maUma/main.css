@@ -54,3 +54,16 @@ body {
   width: 68%;
 }
 
+.rightBottom{
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+}
+
+.zIndex100{
+  z-index: 100;
+}
+
+.zIndex10{
+  z-index: 10;
+}
