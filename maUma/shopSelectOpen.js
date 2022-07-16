@@ -6,7 +6,7 @@ $.getJSON("tokyoShop.json")
     .done(function (json) {
         $.each(json, function (index, object) {
             bodyTokyo += `<div class = "col-lg-6">`
-            bodyTokyo += `<div class = "flexStart bg-white roundedShopImg my-2" id="shops">`
+            bodyTokyo += `<div class = "flexStart bg-white roundedShopImg my-2 mouse" id="shops">`
             bodyTokyo += `<div class="width-img">
                          <img alt="shop" class="shopImg " src="/maUma/img/shopImg/${object.img}">
                          </div>`
@@ -27,7 +27,7 @@ $.getJSON("shop_pw.json")
     .done(function (json) {
         $.each(json, function (index, object) {
             bodyPw += `<div class = "col-lg-6">`
-            bodyPw += `<div class = "flexStart bg-white roundedShopImg my-2" id="shops">`
+            bodyPw += `<div class = "flexStart bg-white roundedShopImg my-2 mouse" id="shops">`
             bodyPw += `<div class="width-img">
                          <img alt="shop" class="shopImg " src="/maUma/img/shopImg/${object.img}">
                          </div>`
@@ -48,7 +48,7 @@ $.getJSON("shop_summer.json")
     .done(function (json) {
         $.each(json, function (index, object) {
             bodySummer += `<div class = "col-lg-6">`
-            bodySummer += `<div class = "flexStart bg-white roundedShopImg my-2" id="shops">`
+            bodySummer += `<div class = "flexStart bg-white roundedShopImg my-2 mouse" id="shops">`
             bodySummer += `<div class="width-img">
                          <img alt="shop" class="shopImg " src="/maUma/img/shopImg/${object.img}">
                          </div>`

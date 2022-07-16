@@ -4,7 +4,7 @@ $.getJSON("tokyoShop.json")
         let body = ""
         $.each(json, function (index, object) {
             body += `<div class = "col-lg-6">`
-            body += `<div class = "flexStart bg-white roundedShopImg my-2" id="shops">`
+            body += `<div class = "flexStart bg-white roundedShopImg my-2 mouse" id="shops">`
             body += `<div class="width-img">
                          <img alt="shop" class="shopImg " src="/maUma/img/shopImg/${object.img}">
                          </div>`
