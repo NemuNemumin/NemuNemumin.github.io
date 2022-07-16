@@ -77,7 +77,7 @@ $(document).on("click", "#pw", function () {//開催日ボタンが押された�
 
     $("#tags").html(bodyPw);
 
-    let pwView ='<p class ="fs-l">東京競馬場 - パークウィンズ</p>'
+    let pwView ='<p class ="fs-l">東京競馬場 - パークウインズ</p>'
     $("#switchView").html(pwView);
 
 });
