@@ -17,6 +17,8 @@ $.getJSON("tokyoShop.json")
             body += `</div>`
 
         })
+        let tokyoView ='<p class ="fs-l">東京競馬場 - 競馬開催日</p>'
+        $("#switchView").append(tokyoView);
         $("#tags").append(body);//bodyをid=tagsの部分に追加
     });
 //店情報の表示終わり

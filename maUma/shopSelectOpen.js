@@ -68,16 +68,25 @@ $(document).on("click", "#tokyo", function () {//開催日ボタンが押され�
 
     $("#tags").html(bodyTokyo);
 
+    let tokyoView ='<p class ="fs-l">東京競馬場 - 競馬開催日</p>'
+    $("#switchView").html(tokyoView);
+
 });
 
 $(document).on("click", "#pw", function () {//開催日ボタンが押されたときに走る
 
     $("#tags").html(bodyPw);
 
+    let pwView ='<p class ="fs-l">東京競馬場 - パークウィンズ</p>'
+    $("#switchView").html(pwView);
+
 });
 
 $(document).on("click", "#summer", function () {//開催日ボタンが押されたときに走る
 
     $("#tags").html(bodySummer);
+
+    let SummerView ='<p class ="fs-l">東京競馬場 - 夏競馬期間</p>'
+    $("#switchView").html(SummerView);
 
 });
