@@ -73,7 +73,7 @@ $(document).on("click", "#tokyo", function () {//開催日ボタンが押され�
 
 });
 
-$(document).on("click", "#pw", function () {//開催日ボタンが押されたときに走る
+$(document).on("click", "#pw", function () {//パークウインズボタンが押されたときに走る
 
     $("#tags").html(bodyPw);
 
@@ -82,7 +82,7 @@ $(document).on("click", "#pw", function () {//開催日ボタンが押された�
 
 });
 
-$(document).on("click", "#summer", function () {//開催日ボタンが押されたときに走る
+$(document).on("click", "#summer", function () {//夏競馬ボタンが押されたときに走る
 
     $("#tags").html(bodySummer);
 
