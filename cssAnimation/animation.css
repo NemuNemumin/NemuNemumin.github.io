@@ -1,0 +1,14 @@
+.text__bound {
+  animation: key .3s ease infinite alternate;
+}
+
+/*
+ease 最初と最後がゆっくり変化する（デフォルト）
+infinite 無限に繰り返す
+alternate アニメーションの方向を反転する
+*/
+
+@keyframes key {
+  0% {transform: translateY(0px);}
+  100% {transform: translateY(-10px);}
+}
