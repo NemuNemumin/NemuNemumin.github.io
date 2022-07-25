@@ -1,7 +1,11 @@
-.button {
-  text-decoration: none;
-  background-color: #00b4aa;
-  transition: background-s
-
+.buttonAnimation{
+  transition-property: all;/*何をアニメーションさせる?*/
+  transition-duration: 0.5s;/*何秒で動かす?*/
+  transition-timing-function: ease;/*どんな変化をさせる?*/
+  transition-delay: 0s;/*どのくらい遅らせる?*/
+  /*
+  transition: all,0.5s,ease,0s
+  ↑上の4つはこのように書き換えられる
+  */
 }
 
