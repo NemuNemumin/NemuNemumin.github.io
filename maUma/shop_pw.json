@@ -4,7 +4,7 @@
         "menu": "定食",
         "place": "フジビュースタンド1F 31番柱",
         "price": "高",
-        "img": "inamatsu.jpg",
+        "img": "noImage.png",
         "tokyo": "1",
         "pw": "1",
         "summer": "1"
@@ -14,7 +14,7 @@
         "menu": "ワッパー",
         "place": "フジビュースタンド2F 3番柱",
         "price": "高",
-        "img": "BURGERKING.jpg",
+        "img": "noImage.png",
         "tokyo": "1",
         "pw": "1",
         "summer": "1"
@@ -24,7 +24,7 @@
         "menu": "ラーメン",
         "place": "フジビュースタンド2F 3番柱",
         "price": "高",
-        "img": "nagasaki.jpg",
+        "img": "noImage.png",
         "tokyo": "1",
         "pw": "1",
         "summer": "1"
@@ -34,7 +34,7 @@
         "menu": "うどん",
         "place": "フジビュースタンド2F 3番柱",
         "price": "中",
-        "img": "hanamaruUdon.jpg",
+        "img": "noImage.png",
         "tokyo": "1",
         "pw": "1",
         "summer": "1"
@@ -114,7 +114,7 @@
         "menu": "うどん",
         "place": "フジビュースタンド2F 33番柱",
         "price": "中",
-        "img": "KASUYA.jpg",
+        "img": "noImage.png",
         "tokyo": "1",
         "pw": "1",
         "summer": "0"
@@ -124,7 +124,7 @@
         "menu": "コーヒー",
         "place": "フジビュースタンド3F 6番柱",
         "price": "低",
-        "img": "ExcelsiorCaffe.jpg",
+        "img": "noImage.png",
         "tokyo": "1",
         "pw": "1",
         "summer": "1"
@@ -134,7 +134,7 @@
         "menu": "いろいろ",
         "place": "フジビュースタンド3F 10番柱",
         "price": "高",
-        "img": "HItCafe.jpg",
+        "img": "noImage.png",
         "tokyo": "1",
         "pw": "1",
         "summer": "1"
@@ -144,7 +144,7 @@
         "menu": "ピザ",
         "place": "フジビュースタンド3F 15番柱",
         "price": "高",
-        "img": "PIZZA-LA_EXPRESS.jpg",
+        "img": "noImage.png",
         "tokyo": "1",
         "pw": "1",
         "summer": "1"
@@ -154,7 +154,7 @@
         "menu": "ファストフード",
         "place": "フジビュースタンド3F 18番柱",
         "price": "高",
-        "img": "FirstKitchen.jpg",
+        "img": "noImage.png",
         "tokyo": "1",
         "pw": "1",
         "summer": "1"
@@ -164,7 +164,7 @@
         "menu": "ペッパーライス",
         "place": "フジビュースタンド3F 22番柱",
         "price": "高",
-        "img": "PepperLunch.jpg",
+        "img": "noImage.png",
         "tokyo": "1",
         "pw": "1",
         "summer": "1"
@@ -184,7 +184,7 @@
         "menu": "カレー",
         "place": "メモリアルスタンドB1F",
         "price": "中",
-        "img": "FurlongBou.jpg",
+        "img": "noImage.png",
         "tokyo": "1",
         "pw": "1",
         "summer": "1"
