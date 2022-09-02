@@ -1,0 +1,11 @@
+/*全体にスムーズスクロールを設定*/
+html{
+    scroll-behavior: smooth;
+}
+
+/*ホバーするかしないか(PC:する、タブレット:しない、スマホ:しない)*/
+@media (hover: hover){
+    a:hover{/*XXX:hover XXXの部分にホバー対象を入れる*/
+        background: red;/*ホバー時の動作を入れる*/
+    }
+}

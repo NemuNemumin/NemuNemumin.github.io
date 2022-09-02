@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!--Bootstrapスタイルシート読込(v5.0)-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <title>maUmaレース再現</title>
+</head>
+<body>
+<!--navbar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">maUmaレース再現</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">レース再現</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="developerdialy.html">開発者日記</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--競馬場の設定-->
+<div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+            aria-expanded="false">
+        競馬場
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" href="#">ユニバーサル</a></li>
+        <li><a class="dropdown-item" href="#">東京競馬場</a></li>
+        <li><a class="dropdown-item" href="#">大井競馬場</a></li>
+        <li><a class="dropdown-item" href="#">ほんとは横に3つ並べて画像を押すみたいに実装したいね(ウマ娘のレース場選択画面的な)</a></li>
+    </ul>
+</div>
+<!--通過順入力フォーム-->
+<form>
+    <p>コーナー通貨順位</p>
+    <p>1角</p>
+    <label for="corner1"></label><input type="text" id="corner1" size="100"><!--1角2角3角4角ゴール板で分けて入力-->
+    <p>2角</p>
+    <label for="corner2"></label><input type="text" id="corner2" size="100"><!--1角2角3角4角ゴール板で分けて入力-->
+    <p>3角</p>
+    <label for="corner3"></label><input type="text" id="corner3" size="100"><!--1角2角3角4角ゴール板で分けて入力-->
+    <p>4角</p>
+    <label for="corner4"></label><input type="text" id="corner4" size="100"><!--1角2角3角4角ゴール板で分けて入力-->
+    <p>2週以上のときどうしよう</p>
+    <p>最終着順</p>
+    <label for="raceResult"></label><input type="text" id="raceResult" size="100">
+    <!--ゴール時の着順。一行入力でも必要。(一行入力は4角までのデータしかないため)-->
+    <!--onClickイベントを追加。クリックするとjsのreproduction()が呼び出される-->
+    <input type="submit" value="再現する!" onclick="return reproduction()">
+</form>
+
+
+<!--BootstrapJSプラグイン読込(v5.0)-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+<!--jQuery読込(googleのCDN)(3系)-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+</html>
