@@ -1,4 +1,4 @@
-//再現するボタンが押されると呼び出されるリプロダクション君//
+//再現するボタンが押されると呼び出されるリプロダクション関数君//
 function reproduction() {
     let corner1 = document.getElementById("corner1");//1コーナーの値を取得
     console.log(corner1.value);
