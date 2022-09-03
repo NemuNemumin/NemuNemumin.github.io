@@ -11,15 +11,15 @@ html{
 }
 
 .open {
-    cursor:pointer; /* マウスオーバーでカーソルの形状を変えることで、クリックできる要素だとわかりやすいように */
+    cursor:pointer; /*マウスオーバーの時にマウスカーソルを押せる指（押せるやつ）に変更*/
 }
-#pop-up {
+#pop-up {/*「#」は、id名の要素に適用するやつ*/
     display: none; /* label でコントロールするので input は非表示に */
 }
 .overlay {
     display: none; /* input にチェックが入るまでは非表示に */
 }
-#pop-up:checked + .overlay {
+#pop-up:checked + .overlay {/*「:checked」は、疑似クラスセレクター。チェックボックスなどの要素がオンやチェックされているときに発動。「+」は隣接する要素にのみ適用。*/
     display: block;
     z-index: 9999; /*最前列に表示(大きいほど上に表示)*/
     background-color: #00000070;
@@ -43,30 +43,6 @@ html{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.text {
-    font-size: 18px;
-    margin: 0;
-}
-.open {
-    cursor:pointer; /* マウスオーバーでカーソルの形状を変えることで、クリックできる要素だとわかりやすいように */
-}
-#pop-up {
-    display: none; /* label でコントロールするので input は非表示に */
-}
-.overlay {
-    display: none; /* input にチェックが入るまでは非表示に */
-}
-#pop-up:checked + .overlay {
-    display: block;
-    z-index: 9999;
-    background-color: #00000070;
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    left: 0;
-}
-
 .text {
     font-size: 18px;
     margin: 0;
