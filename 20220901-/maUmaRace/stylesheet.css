@@ -51,7 +51,7 @@ html{
 .close {
     cursor:pointer;
     position: absolute;
-    top: 4px;
-    right: 4px;
+    bottom: 4px;
+    text-align: center;
     font-size: 20px;
 }
