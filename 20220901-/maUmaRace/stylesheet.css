@@ -37,7 +37,7 @@ html{
     background-color: #ffffff;
     border-radius: 16px;
     display: flex;
-    justify-content: center;
+    justify-content: center; /*要素の揃え位置を指定。*/
     align-items: center;
     position: fixed;
     top: 50%;
