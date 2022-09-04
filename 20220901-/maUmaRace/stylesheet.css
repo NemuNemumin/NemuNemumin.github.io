@@ -1,6 +1,7 @@
 /*全体にスムーズスクロールを設定*/
 html{
     scroll-behavior: smooth;
+    font-size: 1rem;
 }
 
 /*ホバーするかしないか(PC:する、タブレット:しない、スマホ:しない)*/
