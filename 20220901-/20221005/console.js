@@ -1,3 +1,3 @@
-console.log("うま");
 console.log("さかなー");
-console.log("ぬこ");
+console.log("ちんあなごー");
+console.log("コォーカサスオオカブトォー");
