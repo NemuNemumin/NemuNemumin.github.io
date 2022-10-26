@@ -27,3 +27,8 @@ function plusTen(){
   number += 10;
   document.getElementById("num").innerHTML = (`${number}`) ;
 }
+
+function plus334(){
+  number += 334;
+  document.getElementById("num").innerHTML = (`${number}`) ;
+}
