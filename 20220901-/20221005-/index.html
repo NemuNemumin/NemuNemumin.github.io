@@ -7,8 +7,11 @@
   <script type="text/javascript" src="js/variable.js"></script>
   <script type="text/javascript" src="js/num.js"></script>
   <script type="text/javascript" src="js/function.js"></script>
-  -->
   <script type="text/javascript" src="js/function-test.js"></script>
+  <script type="text/javascript" src="js/1026.js"></script>
+  <script type="text/javascript" src="js/WebAPI.js"></script>
+  -->
+  <script type="text/javascript" src="js/modal.js"></script>
   <title>アップロードテスト</title>
 </head>
 <body>
@@ -19,7 +22,7 @@
   <p>分けて書いたやつ</p>
   <p>代入とか</p>
   -->
-  <p>関数とかのテスト</p>
+  <p>jsとかのテスト</p>
   <!--
   <script>
     logHello("1回目");
@@ -37,6 +40,25 @@
     console.log(calculationReturn(2001,505));
     console.log(caReturnFirstDigit(2001,505));
   </script>
+  <button onclick="buttonEvent()">
+    これをクリックするとclickEvent()が実行されるよ
+  </button>
+  <div id = "buttonOut"></div>
+
+  <button onclick="colorEvent()">
+    これをクリックすると下の背景色が変わるよ
+  </button>
+  <div id = "buttonColor">ここの色がかわるよ</div>
+
+  <button onclick="appendCircle()">〇</button>
+  <button onclick="appendCross()">×</button>
+  <div id="circleCross"></div>
+
+  <button onclick="plusOne()">+1</button>
+  <button onclick="plusFive()">+5</button>
+  <button onclick="plusTen()">+10</button>
+
+  <div id ="num">0</div>
 </div>
 </body>
 </html>
