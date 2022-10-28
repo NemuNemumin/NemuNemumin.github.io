@@ -32,3 +32,8 @@ function plus334(){
   number += 334;
   document.getElementById("num").innerHTML = (`${number}`) ;
 }
+
+function reset(){
+  number = 0;
+  document.getElementById("num").innerHTML = (`${number}`) ;
+}
