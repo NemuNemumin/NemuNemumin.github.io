@@ -2,8 +2,16 @@ function buttonEvent(){
   document.getElementById("buttonOut").innerHTML = (`<p>押されたよ</p>`);
 }
 
-function colorEvent(){
-  document.getElementById("buttonColor").style.backgroundColor= "#2B96FA";
+function changeRed(){
+  document.getElementById("change").style.backgroundColor= "#FF0000";
+}
+
+function changeYellow(){
+  document.getElementById("change").style.backgroundColor= "#FFFF00";
+}
+
+function changeGreen(){
+  document.getElementById("change").style.backgroundColor= "#00FF00";
 }
 
 function appendCircle(){
@@ -15,6 +23,7 @@ function appendCross(){
 }
 
 let number = 0
+
 function plusOne(){
   number += 1;
   document.getElementById("num").innerHTML = (`${number}`) ;
