@@ -16,6 +16,7 @@ function changeGreen(){
 
 function appendCircle(){
   document.getElementById("circleCross").append(`〇`) ;
+  // innerHTML += `〇`;的な書き方
 }
 
 function appendCross(){
@@ -36,12 +37,10 @@ function plusTen(){
   number += 10;
   document.getElementById("num").innerHTML = (`${number}`) ;
 }
-
 function plus334(){
   number += 334;
   document.getElementById("num").innerHTML = (`${number}`) ;
 }
-
 function reset(){
   number = 0;
   document.getElementById("num").innerHTML = (`${number}`) ;
