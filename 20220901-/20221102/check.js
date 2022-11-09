@@ -10,16 +10,20 @@ function checkUserInput() {
 function checkAge() {
   let element = document.querySelector("#answer");
   let userAge = Number(document.querySelector("#age").value);
+  let message
   if (userAge < 0) {
-    element.innerHTML = "エラー";
+    message = "エラー";
   } else if (userAge < 20) {
-    element.innerHTML = "未成年";
+    message = "未成年";
   } else if (20 <= userAge && userAge < 65) {
-    element.innerHTML = "成年";
-  } else if (65 <= userAge) {
-    element.innerHTML = "高齢者";
+    message = "成年";
+  } else {
+    message = "高齢者";
   }
+
+  element.innerHTML = message;
 }
+
 
 function checkYear() {
   let element = document.querySelector("#yearAnswer");
