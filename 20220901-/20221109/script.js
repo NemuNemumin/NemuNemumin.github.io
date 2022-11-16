@@ -9,34 +9,26 @@ Array#forEach ->配列オブジェクトの回数分
  */
 
 
-function doLoop(){
-  let i = 0;
-  let sum = 0;
-  let answer = document.querySelector("#answer")
-  while(i <= 10000){
-    sum += i;
-    i++
-    if (sum > 50000){
-      break
-    }
-  }
-  answer.innerHTML = sum;
-}
+
 
 function doFizzBuzz(){
-  let i = 0;
-  let answer1 = document.querySelector("#answerFizzBuzz")
+  let i = 1;
+  let answer1 = document.querySelector("#answerFizzBuzz");
+  let message = "";
   while(i <= 100){
-    if(i % 3 == 0 && i % 5 == 0){
-      answer1.append = "FizzBuzz <br>" ;
+
+    if (i % 3 == 0 && i % 5 == 0){
+      message += "FizzBuzz<br />"
     } else if (i % 3 == 0){
-      answer1.append = "Fizz <br>";
+      message += "Fizz<br />"
     } else if (i % 5 == 0){
-      answer1.append = "Buzz <br>";
+      message += "Buzz<br />"
     } else {
-      answer1.append = `${i} <br>`;
+      message += `${i}<br />`
     }
-  }
+    i++;
+    }
+    answer1.innerHTML = message;
 }
 
 /*
