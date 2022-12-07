@@ -6,20 +6,17 @@ let renderTweets = function (tweets){
 }
 tweets.forEach(renderTweets);
 tw.innerHTML = html;
-
 function btnTweets(filter = "ALL"){
+  html ="";
   if (filter === "ALL"){
-    html = "";
     tweets.forEach(renderTweets);
-  } else {
-    html = "";
+  }
     for (let i = 0; i < tweets.length; i++) {
       if (tweets[i].name === filter) {
         html += "<hr>"
         html += `<img class="myAvatar" src="${tweets[i].avatar}" alt=""><b>${tweets[i].name}</b><br> ${tweets[i].message}<br><i>${tweets[i].tweetedAt}</i>`;
       }
     }
-  }
   tw.innerHTML = html;
 }
 
