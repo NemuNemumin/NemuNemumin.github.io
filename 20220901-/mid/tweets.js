@@ -1,10 +1,8 @@
 let tw = document.querySelector("#tweets");
 let html = "";
-
 let renderTweets = function (tweets){
   html += "<hr>"
   html += `<img class="myAvatar" src="${tweets.avatar}" alt=""><b>${tweets.name}</b><br> ${tweets.message}<br><i>${tweets.tweetedAt}</i>`;
-
 }
 tweets.forEach(renderTweets);
 html += "";
@@ -15,11 +13,10 @@ function tweetsAll() {
   tweets.forEach(renderTweets);
   tw.innerHTML = html;
 }
-
-function btnTweets(flag){
+function btnTweets(filter){
   html = "";
   for (let i = 0 ; i < tweets.length; i++){
-    if (tweets[i].name === flag){
+    if (tweets[i].name === filter){
       html += "<hr>"
       html += `<img class="myAvatar" src="${tweets[i].avatar}" alt=""><b>${tweets[i].name}</b><br> ${tweets[i].message}<br><i>${tweets[i].tweetedAt}</i>`;
     }
