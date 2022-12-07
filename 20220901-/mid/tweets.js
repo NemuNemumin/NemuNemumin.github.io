@@ -13,36 +13,13 @@ tw.innerHTML = html;
 function tweetsAll() {
   html = "";
   tweets.forEach(renderTweets);
-  html += "";
   tw.innerHTML = html;
 }
 
-function tweetsSabro(){
+function btnTweets(flag){
   html = "";
   for (let i = 0 ; i < tweets.length; i++){
-    if (tweets[i].name === "三郎BOT"){
-      html += "<hr>"
-      html += `<img class="myAvatar" src="${tweets[i].avatar}" alt=""><b>${tweets[i].name}</b><br> ${tweets[i].message}<br><i>${tweets[i].tweetedAt}</i>`;
-    }
-  }
-tw.innerHTML = html;
-}
-
-function tweetsJiro(){
-  html = "";
-  for (let i = 0 ; i < tweets.length; i++){
-    if (tweets[i].name === "次郎"){
-      html += "<hr>"
-      html += `<img class="myAvatar" src="${tweets[i].avatar}" alt=""><b>${tweets[i].name}</b><br> ${tweets[i].message}<br><i>${tweets[i].tweetedAt}</i>`;
-    }
-  }
-  tw.innerHTML = html;
-}
-
-function tweetsTaro(){
-  html = "";
-  for (let i = 0 ; i < tweets.length; i++){
-    if (tweets[i].name === "太郎"){
+    if (tweets[i].name === flag){
       html += "<hr>"
       html += `<img class="myAvatar" src="${tweets[i].avatar}" alt=""><b>${tweets[i].name}</b><br> ${tweets[i].message}<br><i>${tweets[i].tweetedAt}</i>`;
     }
