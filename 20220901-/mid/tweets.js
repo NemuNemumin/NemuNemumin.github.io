@@ -27,7 +27,7 @@ function btnTweets(filter = "ALL"){
 for (let i = 0; i < tweets.length; i++) {
   if(btnName.includes(tweets[i].name)) continue;
   btnName.push(tweets[i].name);
-  btnHTML += `<button class = \"btn btn-dark\" onclick = \"btnTweets('${tweets[i].name}')\">${tweets[i].name}</button>`
+  btnHTML += `<button class = "btn btn-dark" onclick = "btnTweets('${tweets[i].name}')">${tweets[i].name}</button>`
 }
 document.querySelector("#btn").innerHTML = btnHTML;
 
