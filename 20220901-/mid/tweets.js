@@ -1,10 +1,15 @@
 let tw = document.querySelector("#tweets");
 let html = "";
+let btnHTML = "<button class = \"btn btn-dark\" onclick = \"btnTweets()\"  >ALL</button>"
+let btnName = [];
 let renderTweets = function (tweets){
   html += `<hr><img class="myAvatar" src="${tweets.avatar}" alt="${tweets.name}のアバター"><b>${tweets.name}</b><br> ${tweets.message}<br><i>${tweets.tweetedAt}</i>`;
 }
+//初回ツイート表示
 tweets.forEach(renderTweets);
 tw.innerHTML = html;
+
+//ツイートフィルター
 function btnTweets(filter = "ALL"){
   html ="";
   if (filter === "ALL"){
@@ -17,15 +22,13 @@ function btnTweets(filter = "ALL"){
     }
   tw.innerHTML = html;
 }
-let btnHTML = "<button class = \"btn-dark\" onclick = \"btnTweets()\"  >ALL</button>"
-let btnName = [];
+
+//絞り込みボタン生成
 for (let i = 0; i < tweets.length; i++) {
   if(btnName.includes(tweets[i].name)) continue;
   btnName.push(tweets[i].name);
-  btnHTML += `<button class = \"btn-dark\" onclick = \"btnTweets('${tweets[i].name}')\">${tweets[i].name}</button>`
+  btnHTML += `<button class = \"btn btn-dark\" onclick = \"btnTweets('${tweets[i].name}')\">${tweets[i].name}</button>`
 }
 document.querySelector("#btn").innerHTML = btnHTML;
-console.log(btnHTML);
-
 
 
