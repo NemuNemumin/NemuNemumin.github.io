@@ -27,7 +27,3 @@ for (let i = 0; i < tweets.length; i++) {
   btnHTML += `<button class = \"btn-dark\" onclick = \"btnTweets('${tweets[i].name}')\">${tweets[i].name}</button>`
 }
 document.querySelector("#btn").innerHTML = btnHTML;
-console.log(btnHTML);
-
-
-
