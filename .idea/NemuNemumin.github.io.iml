@@ -23,5 +23,8 @@
     <orderEntry type="library" name="jquery" level="application" />
     <orderEntry type="library" name="fetch-jsonp" level="application" />
     <orderEntry type="library" name="tweets" level="application" />
+    <orderEntry type="library" name="jquery-3.3.1.slim" level="application" />
+    <orderEntry type="library" name="popper.js" level="application" />
+    <orderEntry type="library" name="animejs" level="application" />
   </component>
 </module>
