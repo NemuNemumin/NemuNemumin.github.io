@@ -7,28 +7,20 @@
   <link href="main.css" rel="stylesheet">
 </head>
 <body>
-<!--modal-open-button-->
-<button class="open">
-  OPEN
-</button>
-
+<!--map view (click -> modal open) -->
+<img class="open" id="mainMap" onclick="getMouseXY()" src="sample_img/sample_map.jpg" alt="">
 
 <!--modal-->
 <div class="input-modal">
   <button class="close">
     close
   </button>
-  <ul>
-    <li>
-      <a href="index.html">Home</a>
-    </li>
-    <li>
-      <a href="about.html">About</a>
-    </li>
-    <li>
-      <a href="contact.html">Contact</a>
-    </li>
-    </ul>
+  <input type="file" id="input-photo">
+  <label>
+    <input type="text" placeholder="コメントを入力">
+  </label>
+
+
 </div>
 
 

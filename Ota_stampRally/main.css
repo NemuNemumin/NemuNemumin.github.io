@@ -1,38 +1,32 @@
+/* modal control */
 .input-modal {
   position: fixed;
   top: 32px;
-  left: 32px;
+  right: 32px;
   width: 30%;
   height: 40%;
-  background-color: darkgreen;
+  background-color: whitesmoke;
   border-radius: 8px;
-
+/* default is hidden */
   visibility: hidden;
   z-index: -100;
 }
 .open-modal{
+/* click -> visible */
   visibility: visible;
   z-index: 100;
 }
 
-
-
+/* close button*/
 .close {
-  color: #f1f1f1;
+  color: #3c3f41;
   position: absolute;
   top: 1rem;
   right: 1rem;
   cursor: pointer;
 }
-ul {
-  padding-top: 12px;
-  padding-bottom: 24px;
-}
-li {
-  list-style: none;
-  font-size: 24px;
-  padding: 18px;
-}
-li a {
-  color: #f1f1f1;
+
+#mainMap{
+  width: 70%;
+  height: auto;
 }
