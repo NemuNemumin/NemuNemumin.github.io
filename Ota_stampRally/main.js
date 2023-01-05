@@ -7,6 +7,10 @@ modalClose.addEventListener("click",function (){modal.classList.remove("open-mod
 
 //get mouseXY
 function getMouseXY(){
-  console.log("クリックされました");
-}
+  //mouseXY -> x,y
+  var x = event.clientX;
+  var y = event.clientY;
 
+  document.querySelector("#mouseX").innerHTML = `X座標: ${x} `;
+  document.querySelector("#mouseY").innerHTML = `Y座標: ${y} `;
+}
