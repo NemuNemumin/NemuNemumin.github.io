@@ -2,7 +2,9 @@
 let modalOpen = document.querySelector(".open");
 let modal = document.querySelector(".input-modal");
 let modalClose = document.querySelector(".close");
+// photo click -> add open-modal CSS
 modalOpen.addEventListener("click",function (){modal.classList.add("open-modal")});
+// close click -> remove open-modal CSS
 modalClose.addEventListener("click",function (){modal.classList.remove("open-modal")});
 
 //global　declaration
@@ -38,12 +40,12 @@ function uploadGSS (){
         params.append('mouseY', `${mouseY}`);
         params.append('text', `${userTextv}`);
         axios.post('https://script.google.com/macros/s/AKfycbwXe4AUH0aF0vi4e8TdwVx1uEdC2ezcI2cyn95TL0OhEhjMaFL-gfJLaTTSKeKEk_ed/exec', params)
-            .then( ( res ) => {
-              console.log(res.data);
-            } )
-            .catch( ( res ) => {
-              console.error( res );
-            });
+          .then( ( res ) => {
+            console.log(res.data);
+          } )
+          .catch( ( res ) => {
+            console.error( res );
+          });
       }
     }
   });
