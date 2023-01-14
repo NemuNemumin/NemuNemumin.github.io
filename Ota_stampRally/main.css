@@ -14,7 +14,7 @@
 .open-modal{
 /* click -> visible */
   visibility: visible;
-  z-index: 100;
+  z-index: 1000;
 }
 
 /* close button */
@@ -30,3 +30,12 @@
   width: 70%;
   height: auto;
 }
+
+.text{
+  position: absolute;
+  background-color: whitesmoke;
+  font-size: 1.5rem;
+  border-radius: 8px;
+  z-index: 50;
+}
+

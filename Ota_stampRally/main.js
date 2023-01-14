@@ -53,3 +53,6 @@ function uploadGSS (){
   userText.value = "";
 }
 
+function addOpenModal(){
+  modal.classList.add("open-modal");
+}
