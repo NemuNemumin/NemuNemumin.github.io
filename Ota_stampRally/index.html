@@ -3,7 +3,7 @@
 <head>
   <script type="text/javascript" src="vue.dev.js"></script>
   <script type="text/javascript" src="axios.min.js"></script>
-  <script type="text/javascript" src="getGSS.js"></script>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <meta charset="UTF-8">
@@ -12,6 +12,7 @@
 </head>
 <body>
 <div id="tags"></div>
+<div id ="mouseDot"></div>
 <!--map view (click -> modal open) -->
 <img class="open" id="mainMap" onclick="getMouseXY()" style="width: 90%; z-index: 500;" src="sample_img/koukaton.png" alt="">
 <!--modal-->
@@ -34,33 +35,11 @@
 
   <!--submit button-->
   <button class="submit" onclick="uploadGSS()" style="top: 15rem; position: absolute">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cursor" viewBox="0 0 16 16">
-      <path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103zM2.25 8.184l3.897 1.67a.5.5 0 0 1 .262.263l1.67 3.897L12.743 3.52 2.25 8.184z"/>
-    </svg>
+    送信
   </button>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="main.js"></script>
+<script type="text/javascript" src="getGSS.js"></script>
+<script type="text/javascript" src="main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

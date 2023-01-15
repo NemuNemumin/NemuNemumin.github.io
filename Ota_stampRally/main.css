@@ -4,8 +4,8 @@
   top: 32px;
   right: 32px;
   width: 30%;
-  height: 40%;
-  background-color: whitesmoke;
+  height: 30%;
+  background-color: navajowhite;
   border-radius: 8px;
 /* default is hidden */
   visibility: hidden;
@@ -33,8 +33,8 @@
 
 .text{
   position: absolute;
-  background-color: whitesmoke;
-  font-size: 1.5rem;
+  background-color: #88b6c6;
+  font-size: 2rem;
   border-radius: 8px;
   z-index: 50;
 }
