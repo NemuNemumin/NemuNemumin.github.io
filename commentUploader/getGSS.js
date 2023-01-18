@@ -17,7 +17,7 @@ function render_comment() {
           mouseX[i] = json[i].mouseX;
           mouseY[i] = json[i].mouseY;
           text[i] = json[i].text;
-
+          // window.document.getElementById("要素").client---でその要素の横幅/縦幅などを取得
           viewX[i] = mouseX[i] * window.document.getElementById("mainMap").clientWidth;
           viewY[i] = mouseY[i] * window.document.getElementById("mainMap").clientHeight;
 
