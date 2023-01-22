@@ -4,15 +4,65 @@
   <meta charset="UTF-8">
   <title>Title</title>
   <link rel="stylesheet" href="main.css">
+  <!--use bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!--use GoogleFonts-->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@700&display=swap');
+  </style>
 </head>
 <body>
+<!--use bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <!--OP Logo img & Animation　(後で透過pngにする)-->
-  <img class = "OPLogo OPCenter" src="img/logo.jpeg" alt="logo">
+<img class = "OPLogo OPCenter" src="img/logo.jpeg" alt="logo">
+<!--white box-->
+<div class="OP-white"></div>
 
 <!--mainContent-->
 <div>
-  <p>ここにメインコンテンツ</p>
+  <img class="bg-pc d-none d-md-block" src="img/1920x1080.png" alt="横長用画像">
+  <img class="bg-sp d-block d-md-none" src="img/1080x1920.png" alt="縦長用画像">
 </div>
+
+<div class="container">
+  <p class="mt-1" style="font-family:  'Lexend', sans-serif; font-size: 3rem">GALLERY</p>
+  <div>
+    <p style="white-space: nowrap">
+      <img style="width:45%;" src="img/1920x1080.png">
+      <img style="width:45%;" src="img/1920x1080.png">
+      <img style="width:45%;" src="img/1920x1080.png">
+      <img style="width:45%;" src="img/1920x1080.png">
+    </p>
+  </div>
+  <div style="text-align: right">
+    <button id="gallery">SEE ALL</button>
+  </div>
+  <hr>
+
+  <p style="font-family:  'Lexend', sans-serif; font-size: 3rem">NEWS</p>
+  <p>2023.01.22</p>
+  <p>なにかいろいろあったよ!</p>
+  <hr>
+  <p>2023.01.24</p>
+  <p>なにかいろいろあったよ!</p>
+  <hr>
+  <p>2023.01.27</p>
+  <p>なにかいろいろあったよ!</p>
+  <hr>
+  <p>2023.01.27</p>
+  <p>なにかいろいろあったよ!</p>
+  <hr>
+  <div style="text-align: right">
+    <button id="news">SEE ALL</button>
+  </div>
+  <hr>
+
+</div>
+
+<footer style="background-color: yellow; height: 50px;">
+  <p style="text-align: center; margin: auto">EventLayers</p>
+</footer>
 
 </body>
 </html>
