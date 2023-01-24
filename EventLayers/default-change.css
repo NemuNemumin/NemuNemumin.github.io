@@ -15,3 +15,7 @@
 body {
   overflow-x: hidden;
 }
+
+html{
+  font-size: 10px;
+}
