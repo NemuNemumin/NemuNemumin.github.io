@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>TUTech</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="default-change.css">
+  <link rel="stylesheet" href="header.css">
+  <!--use bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!--use GoogleFonts-->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@700&display=swap');
+  </style>
+</head>
+<!--body--------------------------------------------------------------------------------------------------------------->
+<body>
+<!--use bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+<!--mainContent-->
+<!--header.htmlを読み込む-->
+<div class="d-none d-lg-block" id="headerArea"></div><!--ここにheader.htmlが読み込まれる-->
+<script>
+  $(function () {
+    $('#headerArea').load('header.html'); // #headerにheader.htmlを読み込む
+  });
+</script>
+
+<div class="d-block d-lg-none">
+  <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-list"
+       viewBox="0 0 16 16">
+    <path fill-rule="evenodd"
+          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+  </svg>
+</div>
+
+
+<div class="mainContent">
+  <p class="mt-1" style="font-family:  'Lexend', sans-serif; font-size: 7rem;">発表会</p>
+  <div class="dragScroll" id="gallery" style="white-space: nowrap; overflow-x:auto;">
+    <img style="width:65%; max-width: 700px;" src="img/1920x1080.png" alt="イメージ">
+    <img style="width:65%; max-width: 700px;" src="img/1920x1080.png" alt="イメージ">
+    <img style="width:65%; max-width: 700px;" src="img/1920x1080.png" alt="イメージ">
+    <img style="width:65%; max-width: 700px;" src="img/1920x1080.png" alt="イメージ">
+  </div>
+  <div style="text-align: right">
+    <a class="btnSeeAll" href="">SEE ALL <span>➡</span></a>
+  </div>
+  <hr>
+
+  <div class="row">
+
+    <div class="col-md-12 col-lg-6">
+      <p class="mt-1" style="font-family:  'Lexend', sans-serif; font-size: 7rem">説明</p>
+      <div style="font-size: 2rem;">
+        <p>
+          なんかいろいろ書けるかも
+        </p>
+
+        <div style="text-align: right">
+          <a class="btnSeeAll" href="">MORE <span>➡</span></a>
+        </div>
+      </div>
+
+      <div class="d-block d-lg-none">
+        <hr>
+      </div>
+
+    </div>
+
+    <div class="col-md-12 col-lg-6">
+      <p class="mt-1" style="font-family:  'Lexend', sans-serif; font-size: 7rem;">おしらせ</p>
+      <div style="font-size: 2rem;">
+        <p>2023.01.22</p>
+        <p>なにかいろいろあったよ!</p>
+        <hr>
+        <p>2023.01.24</p>
+        <p>なにかいろいろあったよ!</p>
+        <hr>
+        <p>2023.01.27</p>
+        <p>なにかいろいろあったよ!</p>
+        <hr>
+        <p>2023.01.27</p>
+        <p>なにかいろいろあったよ!</p>
+      </div>
+      <hr>
+      <div style="text-align: right">
+        <a class="btnSeeAll" href="">SEE ALL <span>➡</span></a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer style="background-color: gray; height: 50px;">
+  <p style="text-align: center; margin: auto">fotter</p>
+</footer>
+
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
