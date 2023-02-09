@@ -1,3 +1,13 @@
+.borderNews{
+  border:1px solid #07c3f2;
+  padding-top: 10px;
+  border-radius: 15px;
+}
+
+.blue{
+  color: #07c3f2;
+}
+
 #TitleLogo{
   position: absolute;
 }
