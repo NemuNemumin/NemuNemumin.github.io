@@ -106,7 +106,7 @@
 .wrap{
   display: flex;
   align-items: center;
-  height: 41vh; /*top-animation-photoのheightと合わせて変更お願いします*/
+  height: 40vh; /*top-animation-photoのheightと合わせて変更お願いします*/
   overflow: hidden;
 }
 
