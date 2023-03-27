@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <title>EventLayers</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="default-change.css">
-  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="styleSheet/main.css">
+  <link rel="stylesheet" href="styleSheet/default-change.css">
+  <link rel="stylesheet" href="styleSheet/header.css">
   <!--use bootstrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -22,35 +22,35 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
-<!--OP Logo img & Animation　(後で透過pngにする)-->
+<!--OP Logo img & Animation-->
 <img class="OPLogo OPCenter" src="img/logo_esrgan_anime_4x.png" alt="logo">
 <!--white box-->
 <div class="OP-white"></div>
 
 <!--mainContent-->
 <!--header.htmlを読み込む-->
-<div id="headerArea"></div><!--ここにheader.htmlが読み込まれる-->
-<script>
+<!--<div id="headerArea"></div> ここにheader.htmlが読み込まれる
+<script> //スクリプトを記述している部分です。-------------------------------------------
   $(function(){
-    $('#headerArea').load('header.html'); // #headerにheader.htmlを読み込む
+    $('#headerArea').load('pages/header.html'); // #headerにheader.htmlを読み込みます。
   });
-</script>
+</script> //----------------------------------------------------------------------
+-->
 
 <div>
-  <img class="bg-pc d-none d-lg-block" src="img/1920x900.png" alt="横長用画像">
+  <img class="bg-pc " src="img/EL_TwitterTOP.jpg" alt="横長用画像">
   <img class="bg-sp d-block d-lg-none" src="img/1080x1720.png" alt="縦長用画像">
 </div>
 
 <div class="mainContent">
   <p class="mt-1" style="font-family:  'Lexend', sans-serif; font-size: 7rem;">GALLERY</p>
   <div class="dragScroll" id="gallery" style="white-space: nowrap; overflow-x:auto;" >
-      <img style="width:65%; max-width: 600px;" src="img/1920x1080.png" alt="サークルイメージ">
-      <img style="width:65%; max-width: 600px;" src="img/1920x1080.png" alt="サークルイメージ">
-      <img style="width:65%; max-width: 600px;" src="img/1920x1080.png" alt="サークルイメージ">
-      <img style="width:65%; max-width: 600px;" src="img/1920x1080.png" alt="サークルイメージ">
+      <img style="width:65%; max-width: 600px; " src="img/EL0311_2.jpg" alt="サークルイメージ">
+      <img style="width:65%; max-width: 600px; " src="img/EL0311_3.jpg" alt="サークルイメージ">
+      <img style="width:65%; max-width: 600px; " src="img/1920x1080.png" alt="サークルイメージ">
   </div>
   <div style="text-align: right">
-    <a class="btnSeeAll" id="goGallery" href="gallery.html">SEE ALL <span>➡</span></a>
+    <a class="btnSeeAll" id="goGallery" href="pages/gallery.html">SEE ALL <span>➡</span></a>
   </div>
   <hr>
 
@@ -66,7 +66,7 @@
       #大学HPから持ってきました
     </p>
     <div style="text-align: right">
-      <a class="btnSeeAll" id="goAbout" href="gallery.html">MORE <span>➡</span></a>
+      <a class="btnSeeAll" id="goAbout" href="pages/gallery.html">MORE <span>➡</span></a>
     </div>
   </div>
 
@@ -76,8 +76,8 @@
 
   <p class="mt-1" style="font-family:  'Lexend', sans-serif; font-size: 7rem;">EVENT</p>
   <div style="font-size: 2rem;">
-    <p>2023.01.22</p>
-    <p>なにかいろいろあったよ!</p>
+    <p>・・・開催済と、今後の予定とで分けた方がいいかも...?</p>
+    <p>本文フォントがデフォルトなので何か変えたいね</p>
     <hr>
     <p>2023.01.24</p>
     <p>なにかいろいろあったよ!</p>
@@ -90,7 +90,7 @@
   </div>
   <hr>
   <div style="text-align: right">
-    <a class="btnSeeAll" id="event"  href="event.html">SEE ALL <span>➡</span></a>
+    <a class="btnSeeAll" id="event"  href="pages/event.html">SEE ALL <span>➡</span></a>
   </div>
 
 </div>
@@ -99,6 +99,6 @@
   <p style="text-align: center; margin: auto">fotter</p>
 </footer>
 
-<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="script/main.js"></script>
 </body>
 </html>

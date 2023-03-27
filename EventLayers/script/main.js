@@ -14,7 +14,7 @@ document.open();
     }).css({
       'cursor': 'auto'
     });
-    // ウィンドウから外れてもイベント実行
+    // マウスカーソルがウィンドウから外れてもイベント実行
     $(document).mousemove(function (event){
       if ($(target).data('down') == true){
         // スクロール
@@ -28,5 +28,5 @@ document.open();
     return this;
   }
 })(jQuery);
-$(document).ready(function () {$('#gallery').dragScroll();});//Your Settings ID or Class
+$(document).ready(function () {$('#gallery').dragScroll();});//適用するクラスやIDを入力してください
 document.close();
