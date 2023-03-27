@@ -68,8 +68,49 @@
   transform: translateX(5px);
 }
 
-
 .mainContent{
   padding-left: 20px;
-  padding-right: 20px;;
+  padding-right: 20px;
+}
+
+/*トップスライドショー制御*/
+
+.top-slideshow-A{
+  display: flex;
+  animation: loop-slide-A 20s infinite linear 1s both;
+}
+.top-slideshow-B{
+  display: flex;
+  animation: loop-slide-B 20s infinite linear 1s both;
+}
+@keyframes loop-slide-A {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-73%);
+  }
+}
+@keyframes loop-slide-B {
+  from {
+    transform: translateX(-73%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.top-animation-photo{
+  height: 500px;
+}
+
+.wrap{
+  display: flex;
+  align-items: center;
+  height: 500px;
+  overflow: hidden;
+}
+
+li{
+  list-style:none
 }
