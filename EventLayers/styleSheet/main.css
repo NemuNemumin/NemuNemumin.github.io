@@ -93,7 +93,7 @@
 }
 @keyframes loop-slide-B {
   from {
-    transform: translateX(-63%);
+    transform: translateX(-75%);
   }
   to {
     transform: translateX(0%);
