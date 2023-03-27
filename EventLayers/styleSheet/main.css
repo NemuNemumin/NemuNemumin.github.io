@@ -101,13 +101,13 @@
 }
 
 .top-animation-photo{
-  height: 40vh;
+  height: 50vh;
 }
 
 .wrap{
   display: flex;
   align-items: center;
-  height: 40vh; /*top-animation-photoのheightと合わせて変更お願いします*/
+  height: 50vh; /*top-animation-photoのheightと合わせて変更お願いします*/
   overflow: hidden;
 }
 
