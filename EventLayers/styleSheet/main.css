@@ -74,7 +74,6 @@
 }
 
 /*トップスライドショー制御*/
-
 .top-slideshow-A{
   display: flex;
   animation: loop-slide-A 20s infinite linear 1s both;
