@@ -1,4 +1,5 @@
-.OPLogo {
+/*オープニングアニメーションの設定*/
+.OP-logo {
   animation:
       rotate-anime 0.5s ease-in-out,
       scale-out 1s ease-in 0.5s,
@@ -19,7 +20,7 @@
   0%{ opacity: 100;}
   100%{ opacity: 0;}
 }
-.OPCenter {
+.OP-center {
   width: 80%;
   max-width: 600px;
   position: fixed;
@@ -44,14 +45,7 @@
   100%{transform: translateY(-3000px);}
 }
 
-.bg-pc{
-  width: 100%;
-}
-
-.bg-sp{
-  width: 100%;
-}
-
+/*ボタン系の設定*/
 .btnSeeAll{
   font-size: 2.5rem;
   font-family:  'Lexend', sans-serif;
@@ -67,7 +61,6 @@
   transition: 0.3s;
   transform: translateX(5px);
 }
-
 .mainContent{
   padding-left: 20px;
   padding-right: 20px;
@@ -76,26 +69,14 @@
 /*トップスライドショー制御*/
 .top-slideshow-A{
   display: flex;
-  animation: loop-slide-A 20s infinite linear 1s both;
+  animation: loop-slide 20s infinite linear 1s both;
 }
-.top-slideshow-B{
-  display: flex;
-  animation: loop-slide-B 20s infinite linear 1s both;
-}
-@keyframes loop-slide-A {
+@keyframes loop-slide {
   from {
     transform: translateX(0);
   }
   to {
     transform: translateX(-63%);
-  }
-}
-@keyframes loop-slide-B {
-  from {
-    transform: translateX(-80%);
-  }
-  to {
-    transform: translateX(0%);
   }
 }
 
