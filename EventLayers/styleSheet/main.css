@@ -59,7 +59,7 @@
 }
 .btnSeeAll:hover span{
   transition: 0.3s;
-  transform: translateX(5px);
+  transform: translateY(5px);
 }
 .mainContent{
   padding-left: 20px;
