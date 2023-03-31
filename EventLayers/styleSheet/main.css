@@ -94,3 +94,12 @@
 li{
   list-style:none
 }
+
+/*イベントの表示制御*/
+.event-default-block{
+  display: block;
+}
+.event-default-none{
+  display: none;
+}
+

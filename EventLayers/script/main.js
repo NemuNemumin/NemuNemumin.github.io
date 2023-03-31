@@ -30,3 +30,7 @@ document.open();
 })(jQuery);
 $(document).ready(function () {$('#gallery').dragScroll();});//適用するクラスやIDを入力してください
 document.close();
+
+$('#eventSeeAll').click(function (){
+  $('')
+})
