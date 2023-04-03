@@ -15,3 +15,7 @@
 body {
   overflow-x: hidden;
 }
+
+p{
+  white-space: nowrap;
+}
