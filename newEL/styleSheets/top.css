@@ -9,7 +9,7 @@
   margin: 40px auto;
 }
 
-.background-color{
+body{
   background: linear-gradient(150deg,#c7eef4,#ffffff); /*グラデーション方向,開始色,終了色*/
 }
 
