@@ -1,0 +1,27 @@
+.header-img{
+  height: 160px;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-bottom: 10px;
+}
+
+.page-background{
+  position: fixed;
+  height: 100vh;
+  z-index: -100000;
+  background: linear-gradient(150deg,#c7eef4,#FFFFFF); /*グラデーション方向,開始色,終了色*/
+}
+
+.carousel-img{
+  width: 92%;
+  border-radius: 30px;
+  display: block; /*imgはインライン要素なので一旦ブロック要素にしてあげてください。*/
+  margin: 20px auto; /*margin-top:　20px,margin-bottom: 20px,margin-right: auto,margin-left: auto;と同じ内容です。*/
+}
+
+.title-text{
+  font-size: 60px;
+  color: #2D4B70;
+  text-align: center;
+  font-family: "Noto Sans JP", "Roboto", sans-serif;
+}
