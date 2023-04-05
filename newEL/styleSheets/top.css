@@ -25,3 +25,9 @@
   text-align: center;
   font-family: "Noto Sans JP", "Roboto", sans-serif;
 }
+.main-text{
+  font-size: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-family: "Noto Sans JP", "Roboto", sans-serif;
+}
