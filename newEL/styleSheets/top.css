@@ -10,7 +10,7 @@
 }
 
 body{
-  background: linear-gradient(150deg,#c7eef4,#ffffff); /*グラデーション方向,開始色,終了色*/
+  background: linear-gradient(150deg,#d9f3f7,#ffffff); /*グラデーション方向,開始色,終了色*/
 }
 
 .carousel-img{
@@ -32,3 +32,4 @@ body{
   padding-right: 40px;
   font-family: "Noto Sans JP", "Roboto", sans-serif;
 }
+
