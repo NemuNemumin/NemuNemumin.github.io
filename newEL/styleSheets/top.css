@@ -7,7 +7,7 @@
 
 .page-background{
   position: fixed;
-  height: 100vh;
+  height: 100%;
   z-index: -100000;
   background: linear-gradient(150deg,#c7eef4,#FFFFFF); /*グラデーション方向,開始色,終了色*/
 }
