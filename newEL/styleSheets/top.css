@@ -5,6 +5,10 @@
   padding-bottom: 10px;
 }
 
+.section{
+  margin: 40px auto;
+}
+
 .background-color{
   background: linear-gradient(150deg,#c7eef4,#ffffff); /*グラデーション方向,開始色,終了色*/
 }
