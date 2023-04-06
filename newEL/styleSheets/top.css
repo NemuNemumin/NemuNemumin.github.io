@@ -35,6 +35,7 @@ body{
 
 .calender-btn > li{
   list-style: none;
+  display: inline-block;
 }
 
 input[type=radio]{
