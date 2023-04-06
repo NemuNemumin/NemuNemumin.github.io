@@ -15,7 +15,7 @@ body{
 
 .carousel-img{
   width: 98%;
-  border-radius: 30px;
+  border-radius: 36px;
   display: block; /*imgはインライン要素なので一旦ブロック要素にしてあげてください。*/
   margin: 20px auto; /*margin-top:　20px,margin-bottom: 20px,margin-right: auto,margin-left: auto;と同じ内容です。*/
 }
