@@ -50,6 +50,21 @@ body{
   color: #2D4B70;
 }
 
+.calender-all{
+  margin:40px;
+}
+.calender-sec{
+  background: #ccffff;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.calender-cap{
+  font-size: 40px;
+  font-family: "Noto Sans JP", "Roboto", sans-serif;
+  padding-bottom: 10px;
+}
+
 .calender-btn > li:hover{
   cursor: pointer;
 }
@@ -65,9 +80,7 @@ input[type=radio]{
 
 
 
-
-
-.question{
+.font50{
   font-size: 50px;
   color: #2D4B70;
   font-family: "Noto Sans JP", "Roboto", sans-serif;
