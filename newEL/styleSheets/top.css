@@ -50,9 +50,23 @@ body{
   color: #2D4B70;
 }
 
+.calender-btn > li:hover{
+  cursor: pointer;
+}
+.calender-btn > li > label:hover{
+  cursor: pointer;
+}
 input[type=radio]{
   display: none;
 }
+.sbh1,.sbh2,.sbh3,.sbh4,.sbh5,.sbh6,.sbh7,.sbh8,.sbh9,.sbh10,.sbh11,.sbh12{
+  display: none;
+}
+
+
+
+
+
 .question{
   font-size: 50px;
   color: #2D4B70;
