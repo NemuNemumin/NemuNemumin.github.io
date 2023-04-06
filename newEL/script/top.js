@@ -30,3 +30,39 @@ document.open();
 })(jQuery);
 $(document).ready(function () {$('#calender-btn').dragScroll();});//適用するクラスやIDを入力してください
 document.close();
+
+function isDisplayCalendar03(){
+  document.getElementById("sbh4").style.display = "none";
+  document.getElementById("sbh5").style.display = "none";
+  document.getElementById("sbh6").style.display = "none";
+  document.getElementById("sbh7").style.display = "none";
+  document.getElementById("sbh3").style.display = "block";
+}
+function isDisplayCalendar04(){
+  document.getElementById("sbh3").style.display = "none";
+  document.getElementById("sbh5").style.display = "none";
+  document.getElementById("sbh6").style.display = "none";
+  document.getElementById("sbh7").style.display = "none";
+  document.getElementById("sbh4").style.display = "block";
+}
+function isDisplayCalendar05(){
+  document.getElementById("sbh3").style.display = "none";
+  document.getElementById("sbh4").style.display = "none";
+  document.getElementById("sbh6").style.display = "none";
+  document.getElementById("sbh7").style.display = "none";
+  document.getElementById("sbh5").style.display = "block";
+}
+function isDisplayCalendar06(){
+  document.getElementById("sbh3").style.display = "none";
+  document.getElementById("sbh4").style.display = "none";
+  document.getElementById("sbh5").style.display = "none";
+  document.getElementById("sbh7").style.display = "none";
+  document.getElementById("sbh6").style.display = "block";
+}
+function isDisplayCalendar07(){
+  document.getElementById("sbh3").style.display = "none";
+  document.getElementById("sbh4").style.display = "none";
+  document.getElementById("sbh5").style.display = "none";
+  document.getElementById("sbh6").style.display = "none";
+  document.getElementById("sbh7").style.display = "block";
+}
