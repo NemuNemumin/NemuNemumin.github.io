@@ -31,93 +31,27 @@ document.open();
 $(document).ready(function () {$('#calender-btn').dragScroll();});//適用するクラスやIDを入力してください
 document.close();
 
-function isDisplayCalendar03(){
-  document.getElementById("sbh4").style.display = "none";
-  document.getElementById("sbh5").style.display = "none";
-  document.getElementById("sbh6").style.display = "none";
-  document.getElementById("sbh7").style.display = "none";
-  document.getElementById("sbh3").style.display = "block";
-
-  document.getElementById("3rd").style.color = "#FFFFFF";
-  document.getElementById("3rd").style.backgroundColor = "#2D4B70";
-  document.getElementById("4th").style.color = "";
-  document.getElementById("4th").style.backgroundColor = "";
-  document.getElementById("5th").style.color = "";
-  document.getElementById("5th").style.backgroundColor = "";
-  document.getElementById("6th").style.color = "";
-  document.getElementById("6th").style.backgroundColor = "";
-  document.getElementById("7th").style.color = "";
-  document.getElementById("7th").style.backgroundColor = "";
+function defaultScroll(month) {
+  let flag = Number(month);
+  document.getElementById('calenderList').scrollLeft = flag * 230;
 }
-function isDisplayCalendar04(){
-  document.getElementById("sbh3").style.display = "none";
-  document.getElementById("sbh5").style.display = "none";
-  document.getElementById("sbh6").style.display = "none";
-  document.getElementById("sbh7").style.display = "none";
-  document.getElementById("sbh4").style.display = "block";
 
-  document.getElementById("4th").style.color = "#FFFFFF";
-  document.getElementById("4th").style.backgroundColor = "#2D4B70";
-  document.getElementById("3rd").style.color = "";
-  document.getElementById("3rd").style.backgroundColor = "";
-  document.getElementById("5th").style.color = "";
-  document.getElementById("5th").style.backgroundColor = "";
-  document.getElementById("6th").style.color = "";
-  document.getElementById("6th").style.backgroundColor = "";
-  document.getElementById("7th").style.color = "";
-  document.getElementById("7rd").style.backgroundColor = "";
-}
-function isDisplayCalendar05(){
-  document.getElementById("sbh3").style.display = "none";
-  document.getElementById("sbh4").style.display = "none";
-  document.getElementById("sbh6").style.display = "none";
-  document.getElementById("sbh7").style.display = "none";
-  document.getElementById("sbh5").style.display = "block";
 
-  document.getElementById("5th").style.color = "#FFFFFF";
-  document.getElementById("5th").style.backgroundColor = "#2D4B70";
-  document.getElementById("3rd").style.color = "";
-  document.getElementById("3rd").style.backgroundColor = "";
-  document.getElementById("4th").style.color = "";
-  document.getElementById("4th").style.backgroundColor = "";
-  document.getElementById("6th").style.color = "";
-  document.getElementById("6th").style.backgroundColor = "";
-  document.getElementById("7th").style.color = "";
-  document.getElementById("7th").style.backgroundColor = "";
-}
-function isDisplayCalendar06(){
-  document.getElementById("sbh3").style.display = "none";
-  document.getElementById("sbh4").style.display = "none";
-  document.getElementById("sbh5").style.display = "none";
-  document.getElementById("sbh7").style.display = "none";
-  document.getElementById("sbh6").style.display = "block";
 
-  document.getElementById("6th").style.color = "#FFFFFF";
-  document.getElementById("6th").style.backgroundColor = "#2D4B70";
-  document.getElementById("3rd").style.color = "";
-  document.getElementById("3rd").style.backgroundColor = "";
-  document.getElementById("4th").style.color = "";
-  document.getElementById("4th").style.backgroundColor = "";
-  document.getElementById("5th").style.color = "";
-  document.getElementById("5th").style.backgroundColor = "";
-  document.getElementById("7th").style.color = "";
-  document.getElementById("7th").style.backgroundColor = "";
-}
-function isDisplayCalendar07(){
-  document.getElementById("sbh3").style.display = "none";
-  document.getElementById("sbh4").style.display = "none";
-  document.getElementById("sbh5").style.display = "none";
-  document.getElementById("sbh6").style.display = "none";
-  document.getElementById("sbh7").style.display = "block";
-
-  document.getElementById("7th").style.color = "#FFFFFF";
-  document.getElementById("7th").style.backgroundColor = "#2D4B70";
-  document.getElementById("3rd").style.color = "";
-  document.getElementById("3rd").style.backgroundColor = "";
-  document.getElementById("4th").style.color = "";
-  document.getElementById("4th").style.backgroundColor = "";
-  document.getElementById("5th").style.color = "";
-  document.getElementById("5th").style.backgroundColor = "";
-  document.getElementById("6th").style.color = "";
-  document.getElementById("6th").style.backgroundColor = "";
+function isDisplayCalender(month){
+  let flag = Number(month);
+  for (let i = 0; i < 13; i++){
+    if (i === flag) {
+      console.log(flag);
+      document.getElementById(`sbh${flag}`).style.display = "block";
+      document.getElementById(`menu${flag}`).style.color = "#FFFFFF";
+      document.getElementById(`menu${flag}`).style.backgroundColor = "#2D4B70";
+      document.getElementById('calenderList').scrollLeft = flag * 230;
+      continue
+    }
+      console.log(i);
+      document.getElementById(`sbh${i}`).style.display = "none";
+      document.getElementById(`menu${i}`).style.backgroundColor = "";
+      document.getElementById(`menu${i}`).style.color = "";
+    }
 }

@@ -10,7 +10,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
-<body>
+<body onload="defaultScroll(4)"><!--デフォルトで表示させたい月の数字を入力してください-->
 <!--ヘッダー(横長のロゴ画像もしくはテキストの方がよさそうですね)-->
 <header style="background-color: white">
   <img src="img/eventLayers_logo.png" class="header-img" alt="イベントレイヤーズロゴ">
@@ -84,34 +84,105 @@
   <div class="section">
     <p class="title-text">カレンダー</p>
     <p class="main-text">
-      <ul class="calender-btn">
-        <li onclick="isDisplayCalendar03()" id="3rd">
+    <p>自動スクロール機能はベータ版です</p>
+      <ul class="calender-btn" id="calenderList">
+        <li onclick="isDisplayCalender(0)" id="menu0">
+          <label for="zero">
+            <input type="radio" name="calendar" value="zero" id="zero">過去のイベント
+          </label>
+        </li>
+        <li onclick="isDisplayCalender(1)" id="menu1">
+          <label for="one">
+            <input type="radio" name="calendar" value="one" id="one">1月
+          </label>
+        </li>
+        <li onclick="isDisplayCalender(2)" id="menu2">
+          <label for="two">
+            <input type="radio" name="calendar" value="2月" id="two">2月
+          </label>
+        </li>
+        <li onclick="isDisplayCalender(3)" id="menu3">
           <label for="three">
             <input type="radio" name="calendar" value="3月" id="three">3月
           </label>
         </li>
-        <li onclick="isDisplayCalendar04()" id="4th" style="color: #FFFFFF; background-color: #2D4B70;"> <!--デフォルトで選択状態に見せる部分にstyle以降を追加-->
+        <li onclick="isDisplayCalender(4)" id="menu4" style="color: #FFFFFF; background-color: #2D4B70;"> <!--デフォルトで選択状態に見せる部分にstyle以降を追加-->
           <label for="four">
             <input type="radio" name="calendar" value="4月" id="four">4月
           </label>
         </li>
-        <li onclick="isDisplayCalendar05()" id="5th">
+        <li onclick="isDisplayCalender(5)" id="menu5">
           <label for="five">
             <input type="radio" name="calendar" value="5月" id="five">5月
           </label>
         </li>
-        <li onclick="isDisplayCalendar06()" id="6th">
+        <li onclick="isDisplayCalender(6)" id="menu6">
           <label for="six">
             <input type="radio" name="calendar" value="6月" id="six" >6月
           </label>
         </li>
-        <li onclick="isDisplayCalendar07()" id="7th">
+        <li onclick="isDisplayCalender(7)" id="menu7">
           <label for="seven">
             <input type="radio" name="calendar" value="7月" id="seven">7月
           </label>
         </li>
+        <li onclick="isDisplayCalender(8)" id="menu8">
+          <label for="eight">
+            <input type="radio" name="calendar" value="8月" id="eight">8月
+          </label>
+        </li>
+        <li onclick="isDisplayCalender(9)" id="menu9">
+          <label for="nine">
+            <input type="radio" name="calendar" value="9月" id="nine">9月
+          </label>
+        </li>
+        <li onclick="isDisplayCalender(10)" id="menu10">
+          <label for="ten">
+            <input type="radio" name="calendar" value="10月" id="ten">10月
+          </label>
+        </li>
+        <li onclick="isDisplayCalender(11)" id="menu11">
+          <label for="eleven">
+            <input type="radio" name="calendar" value="11月" id="eleven">11月
+          </label>
+        </li>
+        <li onclick="isDisplayCalender(12)" id="menu12">
+          <label for="twelve">
+            <input type="radio" name="calendar" value="12月" id="twelve">12月
+          </label>
+        </li>
       </ul>
     <div class="calender-all section">
+      <div id="sbh0">
+        <div class="calender-sec">
+          <p class="font50">
+
+          </p>
+          <p class="calender-cap">
+
+          </p>
+        </div>
+      </div>
+      <div id="sbh1">
+        <div class="calender-sec">
+          <p class="font50">
+
+          </p>
+          <p class="calender-cap">
+
+          </p>
+        </div>
+      </div>
+      <div id="sbh2">
+        <div class="calender-sec">
+          <p class="font50">
+
+          </p>
+          <p class="calender-cap">
+
+          </p>
+        </div>
+      </div>
       <div id="sbh3">
         <div class="calender-sec">
           <p class="font50">
@@ -157,7 +228,7 @@
             春期撮影会(6)
           </p>
         </div>
-      </div><!--3月カレンダー-->
+      </div>
       <div id="sbh4"><!--4月カレンダー-->
         <div class="calender-sec">
           <p class="font50">
@@ -186,7 +257,7 @@
             -----
           </p>
         </div>
-      </div><!--5月-->
+      </div>
       <div id="sbh6"><!--6月-->
         <div class="calender-sec">
           <p class="font50">
@@ -198,6 +269,56 @@
         </div>
       </div>
       <div id="sbh7"><!--7月-->
+        <div class="calender-sec">
+          <p class="font50">
+            未定
+          </p>
+          <p class="calender-cap">
+            -----
+          </p>
+        </div>
+      </div>
+      <div id="sbh8">
+        <div class="calender-sec">
+          <p class="font50">
+            未定
+          </p>
+          <p class="calender-cap">
+            -----
+          </p>
+        </div>
+      </div>
+      <div id="sbh9">
+        <div class="calender-sec">
+          <p class="font50">
+            未定
+          </p>
+          <p class="calender-cap">
+            -----
+          </p>
+        </div>
+      </div>
+      <div id="sbh10">
+        <div class="calender-sec">
+          <p class="font50">
+            未定
+          </p>
+          <p class="calender-cap">
+            -----
+          </p>
+        </div>
+      </div>
+      <div id="sbh11">
+        <div class="calender-sec">
+          <p class="font50">
+            未定
+          </p>
+          <p class="calender-cap">
+            -----
+          </p>
+        </div>
+      </div>
+      <div id="sbh12">
         <div class="calender-sec">
           <p class="font50">
             未定
