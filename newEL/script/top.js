@@ -33,23 +33,22 @@ document.close();
 
 function defaultScroll(month) {
   let flag = Number(month);
-  document.getElementById('calenderList').scrollLeft = flag * 230;
+  document.getElementById('calenderList').scrollLeft = flag * 225 + 140;
 }
 
 
 
 function isDisplayCalender(month){
   let flag = Number(month);
+
+
   for (let i = 0; i < 13; i++){
     if (i === flag) {
-      console.log(flag);
       document.getElementById(`sbh${flag}`).style.display = "block";
       document.getElementById(`menu${flag}`).style.color = "#FFFFFF";
       document.getElementById(`menu${flag}`).style.backgroundColor = "#2D4B70";
-      document.getElementById('calenderList').scrollLeft = flag * 230;
       continue
     }
-      console.log(i);
       document.getElementById(`sbh${i}`).style.display = "none";
       document.getElementById(`menu${i}`).style.backgroundColor = "";
       document.getElementById(`menu${i}`).style.color = "";

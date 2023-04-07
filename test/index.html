@@ -1,37 +1,56 @@
-<!DOCTYPE html>
-<div class="slider">
-  <div class="slides">
-    <img src="image1.jpg">
-    <img src="image2.jpg">
-    <img src="image3.jpg">
+<div class="container">
+  <div class="button-wrapper">
+    <button class="button active" onclick="moveToCenter(this)">Button 1</button>
+    <button class="button" onclick="moveToCenter(this)">Button 2</button>
+    <button class="button" onclick="moveToCenter(this)">Button 3</button>
+    <button class="button" onclick="moveToCenter(this)">Button 4</button>
+    <button class="button" onclick="moveToCenter(this)">Button 5</button>
   </div>
 </div>
 
 <style>
-  .slider {
+  .container {
     width: 100%;
-    height: 300px;
-    overflow: hidden;
+    overflow-x: scroll;
+    white-space: nowrap;
   }
 
-  .slides {
-    display: flex;
-    width: 300%;
-    animation: slide 10s infinite;
+  .button-wrapper {
+    display: inline-block;
+    padding: 20px;
   }
 
-  .slides img {
-    width: 33.333%;
-    height: 300px;
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    background-color: #ccc;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
   }
 
-  @keyframes slide {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-200%);
-    }
+  .button.active {
+    background-color: #f00;
   }
 
 </style>
+
+<script>
+  function moveToCenter(button) {
+    // remove active class from all buttons
+    let buttons = document.getElementsByClassName("button");
+    for (let i = 0; i < buttons.length; i++) {
+      buttons[i].classList.remove("active");
+    }
+    // add active class to the clicked button
+    button.classList.add("active");
+    // calculate the distance to move the button
+    let buttonPosition = button.getBoundingClientRect().left;
+    let containerPosition = document.querySelector(".container").getBoundingClientRect().left;
+    let distanceToMove = buttonPosition - containerPosition - (window.innerWidth / 2 - button.offsetWidth / 2);
+    // move the container
+    document.querySelector(".container").scrollLeft += distanceToMove;
+  }
+
+</script>
