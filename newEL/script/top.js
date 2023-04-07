@@ -1,5 +1,5 @@
 document.open();
-/*jquery*/
+/*横スクロールがドラッグでも動くようになるコードです*/
 (function(){
   $.fn.dragScroll = function(){
     let target = this;
