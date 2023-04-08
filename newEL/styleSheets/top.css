@@ -60,7 +60,8 @@ body{
 }
 
 .calender-cap{
-  font-size: 40px;
+  text-align: center;
+  font-size: 34px;
   font-family: "Noto Sans JP", "Roboto", sans-serif;
   padding-bottom: 10px;
 }
@@ -77,6 +78,28 @@ input[type=radio]{
 #sbh0,#sbh1,#sbh2,#sbh3,#sbh5,#sbh6,#sbh7,#sbh8,#sbh9,#sbh10,#sbh11,#sbh12{
   display: none;
 }
+.calender-tab > .col-6{
+  position: relative;
+  background: #FFFFFF;
+  border-radius: 20px;
+}
+.calender-tab > .col-6 > img{
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+.calender-tab > .col-6 > .calender-date{
+  position: absolute;
+  font-family: "Noto Sans JP", "Roboto", sans-serif;
+  color: #2D4B70;
+  font-size: 34px;
+  border-radius: 100vh;
+  background: #ccffff;
+  padding: 0px 16px;
+  top: -10px;
+  left: 0px;
+}
+
+
 
 
 
