@@ -79,7 +79,7 @@ input[type=radio]{
 }
 .calender-tab > .col-6{
   position: relative;
-  border-radius: 20px;
+  background: none;
 }
 .calender-tab > .col-6 > img{
   width: 100%;
