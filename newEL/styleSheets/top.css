@@ -61,8 +61,14 @@ body{
 
 .calender-cap{
   text-align: center;
+  font-size: 38px;
+  font-family: "Noto Sans JP", "Roboto", sans-serif;
+}
+.calender-text{
+  text-align: left;
   font-size: 34px;
   font-family: "Noto Sans JP", "Roboto", sans-serif;
+  margin-top: -24px;
   padding-bottom: 10px;
 }
 
@@ -80,7 +86,6 @@ input[type=radio]{
 }
 .calender-tab > .col-6{
   position: relative;
-  background: #FFFFFF;
   border-radius: 20px;
 }
 .calender-tab > .col-6 > img{
@@ -91,18 +96,13 @@ input[type=radio]{
   position: absolute;
   font-family: "Noto Sans JP", "Roboto", sans-serif;
   color: #2D4B70;
-  font-size: 34px;
+  font-size: 38px;
   border-radius: 100vh;
   background: #ccffff;
   padding: 0px 16px;
   top: -10px;
   left: 0px;
 }
-
-
-
-
-
 
 .font50{
   font-size: 50px;
