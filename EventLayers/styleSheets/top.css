@@ -8,11 +8,6 @@ body{
   background: linear-gradient(150deg,#d9f3f7,#ffffff); /*グラデーション方向,開始色,終了色*/
 }
 
-.section{
-  padding-top: 160px;
-  margin-top: -160px;
-}
-
 .carousel-img{
   width: 98%;
   border-radius: 36px;
@@ -103,7 +98,7 @@ input[type=radio]{
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   border-radius: 0px 26px 26px 26px;
 }
 .answer{
