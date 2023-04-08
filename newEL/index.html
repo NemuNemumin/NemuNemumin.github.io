@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <title>EventLayers</title>
   <link rel="stylesheet" href="styleSheets/fontImport.css">
-  <!--トップページ用スタールシートを読込-->
+  <!--トップページ用スタイルシートを読込-->
   <link rel="stylesheet" href="styleSheets/top.css">
+  <!--オープニングアニメーション用スタイルシートを読込-->
+  <link rel="stylesheet" href="styleSheets/opAnimation.css">
   <!--bootstrapを使用-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -15,6 +17,10 @@
 <header style="background-color: white">
   <img src="img/eventLayers_logo.png" class="header-img" alt="イベントレイヤーズロゴ">
 </header>
+<!--ロゴのアニメーション-->
+<img class="OP-logo OP-center" src="../newEL/img/eventLayers_logo.png" alt="logo">
+<!--上に上がっていく白い幕のアニメーション-->
+<div class="OP-white"></div>
 
 <div class="background-color container-lg">
   <!--bootstrapを使用-->
@@ -23,7 +29,6 @@
         crossorigin="anonymous"></script>
   <!--top用スクリプトを読込-->
   <script src="script/top.js"></script>
-
 
   <!--TOPのカルーセルを実装-->
   <div id="carouselExampleIndicators" class="carousel slide carousel-background" data-bs-ride="carousel">
@@ -375,7 +380,7 @@
   <div class="section">
     <p class="title-text">SNS</p>
     <p class="main-text">
-      質問や疑問点などありましたらTwitter(@EventLayers)までどうぞ!<br>
+      質問や疑問点などありましたらTwitter(<a href="https://twitter.com/EventLayers">@EventLayers</a>)までどうぞ!<br>
       入部希望の方はDMでのご連絡お待ちしております!
     </p>
   </div>
