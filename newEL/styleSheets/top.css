@@ -84,11 +84,11 @@ input[type=radio]{
 .calender-tab > .col-6 > .calender-date{
   position: absolute;
   font-family: "Noto Sans JP", "Roboto", sans-serif;
-  color: #2D4B70;
+  color: #FFFFFF;
   font-size: 40px;
   border-radius: 100vh;
-  background: #ccffff;
-  padding: 0px 16px;
+  background: #2D4B70;
+  padding: 0 16px 6px;
   top: -10px;
   left: 0px;
 }
