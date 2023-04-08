@@ -4,9 +4,25 @@
   padding-left: 30px;
   padding-bottom: 10px;
 }
+.menu-tab{
+  text-align: center;
+  font-size: 50px;
+  font-family: "Noto Sans JP", "Roboto", sans-serif;
+}
+.display-none-menu{
+  display: none;
+}
+.display-block-menu{
+  display: block;
+}
 
 body{
   background: linear-gradient(150deg,#d9f3f7,#ffffff); /*グラデーション方向,開始色,終了色*/
+}
+
+.section{
+  padding-top: 160px;
+  margin-top: -160px;
 }
 
 .carousel-img{

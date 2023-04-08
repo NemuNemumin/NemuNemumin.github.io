@@ -22,7 +22,43 @@
 
 <!--ヘッダー(横長のロゴ画像もしくはテキストの方がよさそうですね)-->
 <header style="background-color: white; position: sticky; width: 100%; z-index: 80; top:0;">
-  <img src="img/eventLayers_logo.png" class="header-img" alt="イベントレイヤーズロゴ">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="img/eventLayers_logo.png" class="header-img" alt="イベントレイヤーズロゴ">
+      </a>
+      <button style="border: none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="isDisplayBlockMenu()">
+        <span><svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+</svg></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item menu-tab" onclick="isDisplayNoneMenu()">
+            <a class="nav-link" href="#about">概要</a>
+          </li>
+          <li class="nav-item menu-tab">
+            <a class="nav-link" href="#about-date" onclick="isDisplayNoneMenu()">活動日</a>
+          </li>
+          <li class="nav-item menu-tab">
+            <a class="nav-link" href="#about-EL" onclick="isDisplayNoneMenu()">活動内容</a>
+          </li>
+          <li class="nav-item menu-tab">
+            <a class="nav-link" href="#calender" onclick="isDisplayNoneMenu()">カレンダー</a>
+          </li>
+          <li class="nav-item menu-tab">
+            <a class="nav-link" href="#qa" onclick="isDisplayNoneMenu()">Q&A</a>
+          </li>
+          <li class="nav-item menu-tab">
+            <a class="nav-link" href="#fresh" onclick="isDisplayNoneMenu()">新入生の方へ</a>
+          </li>
+          <li class="nav-item menu-tab">
+            <a class="nav-link" href="#sns" onclick="isDisplayNoneMenu()">SNS</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 </header>
 
 <!--ロゴのアニメーション-->
@@ -69,7 +105,7 @@
   </div>
 
   <!--サークル説明-->
-  <div class="section">
+  <div class="section" id="about">
     <p class="title-text">EventLayersとは</p>
     <p class="main-text">
       コスプレを中心に様々なイベントを企画しているサークルです!<br>
@@ -78,7 +114,7 @@
   </div>
 
   <!--活動日-->
-  <div class="section">
+  <div class="section" id="about-date">
     <p class="title-text">活動日</p>
     <p class="main-text">
       毎週火曜日と金曜日19時～21時です。<br>
@@ -88,7 +124,7 @@
   </div>
 
   <!--活動内容-->
-  <div class="section">
+  <div class="section" id="about-EL">
     <p class="title-text">活動内容</p>
     <p class="main-text">
       火曜と金曜のうち、火曜は定例会です。<br>
@@ -99,7 +135,7 @@
   </div>
 
   <!--カレンダー-->
-  <div class="section">
+  <div class="section" id="calender">
     <p class="title-text">カレンダー</p>
     <p class="main-text">
       <ul class="calender-btn" id="calenderList"><!--ボタンの追加に関しては、同時にcssのsbh〇を増やしたり、javascriptのforループ回数を増やしたりしてください。難しい場合、onclickから別の関数を呼び出すなどで対応可能ですが、選択時の色の切り替えなどは効きません-->
@@ -294,7 +330,7 @@
   </div>
 
   <!--Q&A-->
-  <div class="section">
+  <div class="section" id="qa">
     <p class="title-text">Q&A</p>
     <div class="main-text">
       <div class="question font50">
@@ -370,7 +406,7 @@
   </div>
 
   <!--新入生の方へ-->
-  <div class="section">
+  <div class="section" id="fresh">
     <p class="title-text">新入生の方へ</p>
     <p class="main-text">
       4/4の新入生歓迎会でお見せした資料です。
@@ -381,7 +417,7 @@
   </div>
 
   <!--SNS-->
-  <div class="section">
+  <div class="section" id="sns">
     <p class="title-text">SNS</p>
     <p class="main-text">
       質問や疑問点などありましたらTwitter(<a href="https://twitter.com/EventLayers">@EventLayers</a>)までどうぞ!<br>
