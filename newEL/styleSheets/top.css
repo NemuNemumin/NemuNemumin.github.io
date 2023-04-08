@@ -94,8 +94,26 @@ input[type=radio]{
   margin-top: 4px;
 }
 
+.question{
+  background: #ccffff;
+  color: #2D4B70;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 5px;
+  border-radius: 0px 26px 26px 26px;
+}
+.answer{
+  width: 85%;
+  margin-left: 15%;
+  background: #2D4B70;
+  color: #FFFFFF;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 5px;
+  border-radius: 26px 0px 26px 26px;
+
+}
 .font50{
   font-size: 50px;
-  color: #2D4B70;
   font-family: "Noto Sans JP", "Roboto", sans-serif;
 }
