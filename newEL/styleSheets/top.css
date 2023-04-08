@@ -95,6 +95,7 @@ input[type=radio]{
 }
 
 .question{
+  width: 90%;
   background: #ccffff;
   color: #2D4B70;
   padding-left: 30px;
@@ -103,8 +104,8 @@ input[type=radio]{
   border-radius: 0px 26px 26px 26px;
 }
 .answer{
-  width: 85%;
-  margin-left: 15%;
+  width: 90%;
+  margin-left: 10%;
   background: #2D4B70;
   color: #FFFFFF;
   padding-left: 30px;
