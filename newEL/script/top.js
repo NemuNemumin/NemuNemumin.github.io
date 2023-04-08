@@ -31,6 +31,9 @@ document.open();
 $(document).ready(function () {$('#calender-btn').dragScroll();});//適用するクラスやIDを入力してください
 document.close();
 
+
+
+
 /*bodyが読み込まれたとき(=ページが開いた時)に実行される関数です。html側の数字入力でデフォルトのスクロール位置が設定されます。*/
 function defaultScroll(month) {
   let flag = Number(month);
