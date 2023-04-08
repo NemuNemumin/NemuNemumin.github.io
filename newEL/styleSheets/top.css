@@ -103,6 +103,7 @@ input[type=radio]{
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 5px;
+  margin-bottom: 10px;
   border-radius: 0px 26px 26px 26px;
 }
 .answer{
