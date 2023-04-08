@@ -54,12 +54,6 @@ body{
   margin:40px;
 }
 
-.calender-cap{
-  text-align: center;
-  font-size: 38px;
-  font-family: "Noto Sans JP", "Roboto", sans-serif;
-  margin-top: 4px;
-}
 .calender-btn > li:hover{
   cursor: pointer;
 }
@@ -72,16 +66,17 @@ input[type=radio]{
 #sbh0,#sbh1,#sbh2,#sbh3,#sbh5,#sbh6,#sbh7,#sbh8,#sbh9,#sbh10,#sbh11,#sbh12{
   display: none;
 }
-.calender-tab > .col-6{
+
+.calender-tab > .tags{
   position: relative;
   background: none;
   margin-bottom: 26px;
 }
-.calender-tab > .col-6 > img{
+.calender-tab > .tags > img{
   width: 100%;
   border-radius: 20px 20px 20px 20px;
 }
-.calender-tab > .col-6 > .calender-date{
+.calender-tab > .tags > .calender-date{
   position: absolute;
   font-family: "Noto Sans JP", "Roboto", sans-serif;
   color: #FFFFFF;
@@ -91,6 +86,12 @@ input[type=radio]{
   padding: 0 16px 6px;
   top: -10px;
   left: 4px;
+}
+.calender-cap{
+  text-align: center;
+  font-size: 38px;
+  font-family: "Noto Sans JP", "Roboto", sans-serif;
+  margin-top: 4px;
 }
 
 .font50{
