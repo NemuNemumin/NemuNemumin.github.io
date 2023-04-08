@@ -97,7 +97,7 @@ input[type=radio]{
 .question{
   width: max-content;
   max-width: 80%;
-  margin-left: 5%;
+  margin-left: 0%;
   background: #ccffff;
   color: #2D4B70;
   padding-left: 30px;
@@ -108,7 +108,7 @@ input[type=radio]{
 }
 .answer{
   width: 80%;
-  margin-left: 15%;
+  margin-left: 20%;
   background: #2D4B70;
   font-size: 50px;
   color: #FFFFFF;
