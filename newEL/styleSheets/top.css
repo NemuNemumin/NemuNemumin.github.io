@@ -61,17 +61,10 @@ body{
 
 .calender-cap{
   text-align: center;
-  font-size: 38px;
+  font-size: 40px;
   font-family: "Noto Sans JP", "Roboto", sans-serif;
+  margin-top: 10px;
 }
-.calender-text{
-  text-align: left;
-  font-size: 34px;
-  font-family: "Noto Sans JP", "Roboto", sans-serif;
-  margin-top: -24px;
-  padding-bottom: 10px;
-}
-
 .calender-btn > li:hover{
   cursor: pointer;
 }
@@ -96,7 +89,7 @@ input[type=radio]{
   position: absolute;
   font-family: "Noto Sans JP", "Roboto", sans-serif;
   color: #2D4B70;
-  font-size: 38px;
+  font-size: 40px;
   border-radius: 100vh;
   background: #ccffff;
   padding: 0px 16px;
