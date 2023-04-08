@@ -61,9 +61,9 @@ body{
 
 .calender-cap{
   text-align: center;
-  font-size: 40px;
+  font-size: 38px;
   font-family: "Noto Sans JP", "Roboto", sans-serif;
-  margin-top: 10px;
+  margin-top: 4px;
 }
 .calender-btn > li:hover{
   cursor: pointer;
@@ -80,6 +80,7 @@ input[type=radio]{
 .calender-tab > .col-6{
   position: relative;
   background: none;
+  margin-bottom: 26px;
 }
 .calender-tab > .col-6 > img{
   width: 100%;
