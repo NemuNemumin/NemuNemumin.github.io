@@ -36,7 +36,6 @@ function defaultScroll(month) {
   let flag = Number(month);
   document.getElementById('calenderList').scrollLeft = flag * 225 + 140;
 }
-
 /*カレンダーの選択ボタンを押したときに実行される関数です。*/
 function isDisplayCalender(month){
   let flag = Number(month);
