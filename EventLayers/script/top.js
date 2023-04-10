@@ -1,4 +1,3 @@
-document.open();
 /*横スクロールがドラッグでも動くようになるコードです*/
 (function(){
   $.fn.dragScroll = function(){
@@ -16,7 +15,7 @@ document.open();
     });
     // マウスカーソルがウィンドウから外れてもイベント実行
     $(document).mousemove(function (event){
-      if ($(target).data('down') == true){
+      if ($(target).data('down') === true){
         // スクロール
         target.scrollLeft($(target).data('scrollLeft') + $(target).data('x') - event.clientX);
         target.scrollTop($(target).data('scrollTop') + $(target).data('y') - event.clientY);
@@ -28,14 +27,15 @@ document.open();
     return this;
   }
 })(jQuery);
-$(document).ready(function () {$('#calender-btn').dragScroll();});//適用するクラスやIDを入力してください
-document.close();
+$(document).ready(function () {$('#calenderList').dragScroll();});//適用するクラスやIDを入力してください
+
 
 /*bodyが読み込まれたとき(=ページが開いた時)に実行される関数です。html側の数字入力でデフォルトのスクロール位置が設定されます。*/
 function defaultScroll(month) {
   let flag = Number(month);
   document.getElementById('calenderList').scrollLeft = flag * 225 + 140;
 }
+
 /*カレンダーの選択ボタンを押したときに実行される関数です。*/
 function isDisplayCalender(month){
   let flag = Number(month);
