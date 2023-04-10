@@ -1,60 +1,53 @@
+body{
+  background: linear-gradient(150deg,#e4eaed,#ffffff); /*グラデーション方向,開始色,終了色*/
+}
 .header-img{
   height: 140px;
   padding-top: 10px;
   padding-left: 30px;
   padding-bottom: 10px;
 }
-body{
-  background: linear-gradient(150deg,#e4eaed,#ffffff); /*グラデーション方向,開始色,終了色*/
-}
-
 .carousel-img{
-  width: 98%;
-  border-radius: 36px;
   display: block; /*imgはインライン要素なので一旦ブロック要素にしてあげてください。*/
+  width: 98%;
   margin: 20px auto; /*margin-top:　20px,margin-bottom: 20px,margin-right: auto,margin-left: auto;と同じ内容です。*/
+  border-radius: 36px;
 }
-
 .section{
   margin-bottom: 30px;
 }
-
 .title-text{
-  font-size: 60px;
   text-align: left;
-  padding-left: 40px;
   margin-bottom: 10px;
+  padding-left: 40px;
   color: #2e5773;
   font-family: "Noto Sans JP", "Roboto", sans-serif;
+  font-size: 60px;
 }
 .main-text{
-  font-size: 40px;
-  padding-left: 40px;
   padding-right: 40px;
+  padding-left: 40px;
   font-family: "メイリオ", "sans-serif", sans-serif;
+  font-size: 40px;
 }
-
 .calender-btn{
   white-space: nowrap;
   overflow-x: scroll;
 }
-
 .calender-btn > li{
-  list-style: none;
   display: inline-block;
   margin: 30px 30px;
   padding: 5px 60px;
   border-radius: 100vh;
+  list-style: none;
+  color: #303030;
   background-color: #9dc8dd;
   font-family: "Noto Sans JP", "Roboto", sans-serif;
   font-size: 56px;
-  color: #303030;
 }
-
 .calender-all{
   margin:40px;
 }
-
 .calender-btn > li:hover{
   cursor: pointer;
 }
@@ -67,7 +60,6 @@ input[type=radio]{
 #sbh0,#sbh1,#sbh2,#sbh3,#sbh5,#sbh6,#sbh7,#sbh8,#sbh9,#sbh10,#sbh11,#sbh12{
   display: none;
 }
-
 .calender-tab > .tags{
   position: relative;
   background: none;
@@ -79,40 +71,38 @@ input[type=radio]{
 }
 .calender-tab > .tags > .calender-date{
   position: absolute;
-  font-family: "Noto Sans JP", "Roboto", sans-serif;
-  color: #FFFFFF;
-  font-size: 36px;
-  border-radius: 100vh;
-  background: rgba(45, 75, 112, 1);
-  padding: 0 16px 6px;
   top: -20px;
   left: 4px;
+  padding: 0 16px 6px;
+  border-radius: 100vh;
+  color: #FFFFFF;
+  background: rgba(45, 75, 112, 1);
+  font-family: "Noto Sans JP", "Roboto", sans-serif;
+  font-size: 36px;
 }
 .calender-cap{
   text-align: center;
-  font-size: 38px;
-  font-family: "Noto Sans JP", "Roboto", sans-serif;
   margin-top: 4px;
+  font-family: "Noto Sans JP", "Roboto", sans-serif;
+  font-size: 38px;
 }
-
 .question{
   width: max-content;
-  font-family: "メイリオ", "sans-serif", sans-serif;
-  font-size: 40px;
   max-width: 80%;
   margin-left: 0%;
-  background: #9dc8dd;
-  color: #000000;
-  padding: 10px 30px 5px;
   margin-bottom: 20px;
+  padding: 10px 30px 5px;
   border-radius: 0px 26px 26px 26px;
+  color: #000000;
+  background: #9dc8dd;
+  font-family: "メイリオ", "sans-serif", sans-serif;
+  font-size: 40px;
 }
 .answer{
   width: 80%;
   margin-left: 20%;
-  background: #86b792;
-  color: #000000;
   padding: 10px 20px 5px;
   border-radius: 26px 0px 26px 26px;
-
+  color: #000000;
+  background: #86b792;
 }
