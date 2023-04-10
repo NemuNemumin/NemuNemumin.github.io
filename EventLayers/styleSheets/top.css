@@ -1,18 +1,7 @@
 body{
   background: linear-gradient(150deg,#e4eaed,#ffffff); /*グラデーション方向,開始色,終了色*/
 }
-.header-img{
-  height: 140px;
-  padding-top: 10px;
-  padding-left: 30px;
-  padding-bottom: 10px;
-}
-.carousel-img{
-  display: block; /*imgはインライン要素なので一旦ブロック要素にしてあげてください。*/
-  width: 98%;
-  margin: 20px auto; /*margin-top:　20px,margin-bottom: 20px,margin-right: auto,margin-left: auto;と同じ内容です。*/
-  border-radius: 36px;
-}
+/*全体的な指定*/
 .section{
   margin-bottom: 30px;
 }
@@ -29,6 +18,24 @@ body{
   padding-left: 40px;
   font-family: "メイリオ", "sans-serif", sans-serif;
   font-size: 40px;
+}
+/*ヘッダー関連*/
+.header-img{
+  height: 140px;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-bottom: 10px;
+}
+/*カルーセル関連*/
+.carousel-img{
+  display: block; /*imgはインライン要素なので一旦ブロック要素にしてあげてください。*/
+  width: 98%;
+  margin: 20px auto; /*margin-top:　20px,margin-bottom: 20px,margin-right: auto,margin-left: auto;と同じ内容です。*/
+  border-radius: 36px;
+}
+/*カレンダー関連*/
+input[type=radio]{
+  display: none;
 }
 .calender-btn{
   white-space: nowrap;
@@ -53,9 +60,6 @@ body{
 }
 .calender-btn > li > label:hover{
   cursor: pointer;
-}
-input[type=radio]{
-  display: none;
 }
 #sbh0,#sbh1,#sbh2,#sbh3,#sbh5,#sbh6,#sbh7,#sbh8,#sbh9,#sbh10,#sbh11,#sbh12{
   display: none;
@@ -86,6 +90,7 @@ input[type=radio]{
   font-family: "Noto Sans JP", "Roboto", sans-serif;
   font-size: 38px;
 }
+/*Q&A関連*/
 .question{
   width: max-content;
   max-width: 80%;
