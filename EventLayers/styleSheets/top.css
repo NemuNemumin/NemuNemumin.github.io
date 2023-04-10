@@ -101,10 +101,7 @@ input[type=radio]{
   margin-left: 0%;
   background: #9dc8dd;
   color: #000000;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 10px;
-  padding-bottom: 5px;
+  padding: 10px 30px 5px;
   margin-bottom: 20px;
   border-radius: 0px 26px 26px 26px;
 }
