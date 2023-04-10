@@ -5,7 +5,7 @@
   padding-bottom: 10px;
 }
 body{
-  background: linear-gradient(150deg,#d9f3f7,#ffffff); /*グラデーション方向,開始色,終了色*/
+  background: linear-gradient(150deg,#e4eaed,#ffffff); /*グラデーション方向,開始色,終了色*/
 }
 
 .carousel-img{
@@ -15,10 +15,15 @@ body{
   margin: 20px auto; /*margin-top:　20px,margin-bottom: 20px,margin-right: auto,margin-left: auto;と同じ内容です。*/
 }
 
+.section{
+  margin-bottom: 50px;
+}
+
 .title-text{
   font-size: 60px;
-  color: #2D4B70;
-  text-align: center;
+  text-align: left;
+  padding-left: 40px;
+  color: #2e5773;
   font-family: "Noto Sans JP", "Roboto", sans-serif;
 }
 .main-text{
@@ -42,7 +47,7 @@ body{
   background-color: #ccffff;
   font-family: "Noto Sans JP", "Roboto", sans-serif;
   font-size: 56px;
-  color: #2D4B70;
+  color: #303030;
 }
 
 .calender-all{
@@ -93,8 +98,8 @@ input[type=radio]{
   width: max-content;
   max-width: 80%;
   margin-left: 0%;
-  background: #ccffff;
-  color: #2D4B70;
+  background: #9dc8dd;
+  color: #000000;
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 5px;
@@ -104,9 +109,9 @@ input[type=radio]{
 .answer{
   width: 80%;
   margin-left: 20%;
-  background: #2D4B70;
+  background: #86b792;
   font-size: 50px;
-  color: #FFFFFF;
+  color: #000000;
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 5px;
