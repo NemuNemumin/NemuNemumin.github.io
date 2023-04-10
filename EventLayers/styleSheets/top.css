@@ -1,7 +1,7 @@
 body{
   background: linear-gradient(150deg,#e4eaed,#ffffff); /*グラデーション方向,開始色,終了色*/
 }
-/*全体的な指定*/
+/*全体的な指定----------------------------------------------------------------------------------------------------------*/
 .section{
   margin-bottom: 30px;
 }
@@ -19,7 +19,7 @@ body{
   font-family: "メイリオ", "sans-serif", sans-serif;
   font-size: 40px;
 }
-/*ヘッダー関連*/
+/*ヘッダー関連----------------------------------------------------------------------------------------------------------*/
 .header{
   position: sticky;
   top:0;
@@ -33,14 +33,14 @@ body{
   padding-left: 30px;
   padding-bottom: 10px;
 }
-/*カルーセル関連*/
+/*カルーセル関連--------------------------------------------------------------------------------------------------------*/
 .carousel-img{
   display: block; /*imgはインライン要素なので一旦ブロック要素にしてあげてください。*/
   width: 98%;
   margin: 20px auto; /*margin-top:　20px,margin-bottom: 20px,margin-right: auto,margin-left: auto;と同じ内容です。*/
   border-radius: 36px;
 }
-/*カレンダー関連*/
+/*カレンダー関連--------------------------------------------------------------------------------------------------------*/
 input[type=radio]{
   display: none;
 }
@@ -97,7 +97,7 @@ input[type=radio]{
   font-family: "Noto Sans JP", "Roboto", sans-serif;
   font-size: 38px;
 }
-/*Q&A関連*/
+/*Q&A関連-------------------------------------------------------------------------------------------------------------*/
 .question{
   width: max-content;
   max-width: 80%;
