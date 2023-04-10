@@ -111,11 +111,11 @@ input[type=radio]{
   margin-left: 20%;
   background: #86b792;
   color: #000000;
-  padding: 10px 30px 5px;
+  padding: 10px 20px 5px;
   border-radius: 26px 0px 26px 26px;
 
 }
 .font50{
-  font-size: 50px;
+  font-size: 40px;
   font-family: "Noto Sans JP", "Roboto", sans-serif;
 }
