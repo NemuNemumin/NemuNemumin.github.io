@@ -102,6 +102,7 @@ input[type=radio]{
   width: max-content;
   max-width: 80%;
   margin-left: 0%;
+  margin-top: 20px;
   margin-bottom: 20px;
   padding: 10px 30px 5px;
   border-radius: 0px 26px 26px 26px;
