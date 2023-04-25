@@ -76,7 +76,7 @@ input[type=radio]{
   background: none;
   margin-bottom: 26px;
 }
-.calender-tab > .tags > img{
+.calender-tab > .tags > img{/*calender-tabクラス内のtagsクラス内にあるimg要素に適用されます*/
   width: 100%;
   border-radius: 20px 20px 20px 20px;
 }
