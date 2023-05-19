@@ -68,7 +68,7 @@ input[type=radio]{
 .calender-btn > li > label:hover{
   cursor: pointer;
 }
-#sbh0,#sbh1,#sbh2,#sbh3,#sbh5,#sbh6,#sbh7,#sbh8,#sbh9,#sbh10,#sbh11,#sbh12{
+#sbh0,#sbh1,#sbh2,#sbh3,#sbh4,#sbh6,#sbh7,#sbh8,#sbh9,#sbh10,#sbh11,#sbh12{
   display: none;
 }
 .calender-tab > .tags{
