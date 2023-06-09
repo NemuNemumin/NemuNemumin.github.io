@@ -18,7 +18,7 @@
   <!--top用スクリプトを読込-->
   <script type="text/javascript" src="script/top.js"></script>
 </head>
-<body onload="defaultScroll(5)"><!--デフォルトで表示させたい月の数字を入力してください-->
+<body onload="defaultScroll(6)"><!--デフォルトで表示させたい月の数字を入力してください-->
 
 <!--ヘッダー(横長のロゴ画像もしくはテキストの方がよさそうですね)-->
 <a href="#">
@@ -129,12 +129,12 @@
             <input type="radio" name="calendar" value="4月" id="four">4月
           </label>
         </li>
-        <li onclick="isDisplayCalender(5)" id="menu5" style="color: #FFFFFF; background-color: #2D4B70;"> <!--デフォルトで選択状態に見せる部分にstyle以降を追加してください-->
+        <li onclick="isDisplayCalender(5)" id="menu5">
           <label for="five">
             <input type="radio" name="calendar" value="5月" id="five">5月
           </label>
         </li>
-        <li onclick="isDisplayCalender(6)" id="menu6">
+        <li onclick="isDisplayCalender(6)" id="menu6" style="color: #FFFFFF; background-color: #2D4B70;"><!--デフォルトで選択状態に見せる部分にstyle以降を追加してください-->
           <label for="six">
             <input type="radio" name="calendar" value="6月" id="six" >6月
           </label>
@@ -308,7 +308,58 @@
         </div>
       </div>
       <div id="sbh6"><!--6月-->
-        <p class="calender-cap">現在予定はありません</p>
+        <div class="row calender-tab">
+          <div class="col-6 tags">
+            <img src="sampleImg/EL_placeholder_calender.png" alt="">
+            <p class="calender-date">06/02</p>
+            <p class="calender-cap">台風のため中止</p>
+          </div>
+          <div class="col-6 tags">
+            <img src="sampleImg/EL_placeholder_calender.png" alt="">
+            <p class="calender-date">06/06</p>
+            <p class="calender-cap">月末企画決定</p>
+          </div>
+          <div class="col-6 tags">
+            <img src="sampleImg/EL_placeholder_calender.png" alt="">
+            <p class="calender-date">06/09</p>
+            <p class="calender-cap">紅華祭準備</p>
+          </div>
+          <div class="col-6 tags">
+            <img src="sampleImg/EL_placeholder_calender.png" alt="">
+            <p class="calender-date">06/13</p>
+            <p class="calender-cap">紅華祭準備</p>
+          </div>
+          <div class="col-6 tags">
+            <img src="sampleImg/EL_placeholder_calender.png" alt="">
+            <p class="calender-date">06/16</p>
+            <p class="calender-cap">紅華祭準備</p>
+          </div>
+          <div class="col-6 tags">
+            <img src="sampleImg/EL_placeholder_calender.png" alt="">
+            <p class="calender-date">06/19</p>
+            <p class="calender-cap">紅華祭準備</p>
+          </div>
+          <div class="col-6 tags">
+            <img src="sampleImg/EL_placeholder_calender.png" alt="">
+            <p class="calender-date">06/23</p>
+            <p class="calender-cap">紅華祭準備</p>
+          </div>
+          <div class="col-6 tags">
+            <img src="sampleImg/EL_placeholder_calender.png" alt="">
+            <p class="calender-date">06/24</p>
+            <p class="calender-cap">学内撮影会</p>
+          </div>
+          <div class="col-6 tags">
+            <img src="sampleImg/EL_placeholder_calender.png" alt="">
+            <p class="calender-date">06/27</p>
+            <p class="calender-cap">ガーティックフォン</p>
+          </div>
+          <div class="col-6 tags">
+            <img src="sampleImg/EL_placeholder_calender.png" alt="">
+            <p class="calender-date">06/30</p>
+            <p class="calender-cap">紅華祭準備</p>
+          </div>
+        </div>
       </div>
       <div id="sbh7"><!--7月-->
         <p class="calender-cap">現在予定はありません</p>
