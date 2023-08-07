@@ -18,7 +18,7 @@
   <!--top用スクリプトを読込-->
   <script type="text/javascript" src="script/top.js"></script>
 </head>
-<body onload="defaultScroll(6)"><!--デフォルトで表示させたい月の数字を入力してください-->
+<body onload="defaultScroll(8)"><!--デフォルトで表示させたい月の数字を入力してください-->
 
 <!--ヘッダー(横長のロゴ画像もしくはテキストの方がよさそうですね)-->
 <a href="#">
@@ -134,7 +134,7 @@
             <input type="radio" name="calendar" value="5月" id="five">5月
           </label>
         </li>
-        <li onclick="isDisplayCalender(6)" id="menu6" style="color: #FFFFFF; background-color: #2D4B70;"><!--デフォルトで選択状態に見せる部分にstyle以降を追加してください-->
+        <li onclick="isDisplayCalender(6)" id="menu6">
           <label for="six">
             <input type="radio" name="calendar" value="6月" id="six" >6月
           </label>
@@ -144,7 +144,7 @@
             <input type="radio" name="calendar" value="7月" id="seven">7月
           </label>
         </li>
-        <li onclick="isDisplayCalender(8)" id="menu8">
+        <li onclick="isDisplayCalender(8)" id="menu8" style="color: #FFFFFF; background-color: #2D4B70;"><!--デフォルトで選択状態に見せる部分にstyle以降を追加してください-->
           <label for="eight">
             <input type="radio" name="calendar" value="8月" id="eight">8月
           </label>
