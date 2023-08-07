@@ -81,6 +81,7 @@ input[type=radio]{
   border-radius: 20px 20px 20px 20px;
 }
 .calender-tab > .tags > .calender-date{
+  max-width: 100%;
   position: absolute;
   top: -20px;
   left: 4px;
@@ -89,7 +90,8 @@ input[type=radio]{
   color: #FFFFFF;
   background: rgba(45, 75, 112, 1);
   font-family: "Noto Sans JP", "Roboto", sans-serif;
-  font-size: 36px;
+  font-size: 28px;
+
 }
 .calender-cap{
   text-align: center;
