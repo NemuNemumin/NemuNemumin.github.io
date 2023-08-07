@@ -16,7 +16,7 @@ body{
 .main-text{
   padding-right: 40px;
   padding-left: 40px;
-  font-family: "メイリオ", "sans-serif", sans-serif;
+  font-family: "Noto Sans JP Medium", "sans-serif", sans-serif;
   font-size: 40px;
 }
 /*ヘッダー関連----------------------------------------------------------------------------------------------------------*/
@@ -108,7 +108,7 @@ input[type=radio]{
   border-radius: 0px 26px 26px 26px;
   color: #000000;
   background: #9dc8dd;
-  font-family: "メイリオ", "sans-serif", sans-serif;
+  font-family: "Noto Sans JP Medium", "sans-serif", sans-serif;
   font-size: 40px;
 }
 .answer{
