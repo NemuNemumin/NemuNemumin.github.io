@@ -1,1 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+.main-img{
+  width: 90%;
+  max-height: 100vh;
+  user-select: none;/*ユーザーの選択禁止*/
+  user-drag: none;
+}
