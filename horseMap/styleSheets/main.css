@@ -1,7 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
 .main-img{
-  width: 90%;
+  width: 80%;
   max-height: 100vh;
   user-select: none;/*ユーザーの選択禁止*/
   user-drag: none;
 }
+.map-dot{
+  position: absolute;
+  left: 500px;
+  top: 150px;"
+}
+.map-dot:hover{
+  color: red;
+}
+a{
+  text-decoration:none;
+}
+
