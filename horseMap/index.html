@@ -16,10 +16,36 @@
       <div style="position: relative; top: 0; left: 0;">
         <img class="main-img" style="-webkit-user-select:none; -webkit-user-drag: none;" src="source/img/blankMap_ja_GeographicalSurveyInstitute.png" alt="日本地図">
         <div class="map-dot">
-          <a href="map1.html" style="position: absolute;left: 500px;top: 150px; text-decoration:none;">●</a>
-          <a href="map2.html" style="position: absolute;left: 510px;top: 300px; text-decoration:none;">●</a>
-          <a href="map3.html" style="position: absolute;left: 400px;top: 400px; text-decoration:none;">●</a>
+          <a href="map1.html" style="position: absolute;left: 500px;top: 150px; text-decoration:none; font-size:30px;">●</a>
+          <div class="map-content">
+            <img src="source/img/sampleImg.png" alt="" style="width: 100%; border-radius: 20px;">
+            <p>コンテンツ1がここに入ります。</p>
+          </div>
+          <a href="map2.html" style="position: absolute;left: 510px;top: 300px; text-decoration:none; font-size:30px;">●</a>
+          <div class="map-content">
+            <img src="source/img/sampleImg2.png" alt="" style="width: 100%; border-radius: 20px;">
+            <p>コンテンツ2がここに入ります。</p>
+          </div>
+          <a href="map3.html" style="position: absolute;left: 400px;top: 400px; text-decoration:none; font-size:30px;">●</a>
+          <div class="map-content">
+            <img src="source/img/sampleImg3.png" alt="" style="width: 100%; border-radius: 20px;">
+            <p>コンテンツ3がここに入ります。</p>
+          </div>
         </div>
+        <style>
+          .map-content{
+            display:none;
+          }
+          a:hover{
+            color: greenyellow;
+          }
+          a:hover + .map-content{
+            position: absolute;
+            top: 50px;
+            left: 800px;
+            display: block;
+          }
+        </style>
 
 
       </div>
