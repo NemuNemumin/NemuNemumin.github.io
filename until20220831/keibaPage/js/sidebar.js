@@ -1,1 +1,0 @@
-document.write('<div class="sidebar"><h1>サイドバー</h1></div>');
